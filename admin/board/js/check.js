@@ -32,7 +32,7 @@ function noCheck2(){
     if(flag) alert('지원자 거절 완료');
 }
 
-// 프로그램 지원자 거절
+// 공지 글 작성 나가기
 function saveCheck(){
     var msg = "지금 나가면 글이 저장되지 않습니다.\n그래도 나가시곘습니까?";
     var flag = confirm(msg);
