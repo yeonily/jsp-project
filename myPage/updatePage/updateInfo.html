@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sub_title.css"> <!-- 상단 마이페이지 title -->
+    <link rel="stylesheet" href="myProfile.css"> <!-- 내 정보 간단하게 보여주는 폼 -->
+    <link rel="stylesheet" href="moreBtn.css"> <!-- 내가 작성한 글 등 더보기 버튼 -->
+    <link rel="stylesheet" href="updateInfo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 네비게이션바 아래 title -->
+        <div class="sub_title">
+            <div class="container">
+                <div class="inner">
+                    <!-- "마이페이지" 폰트 -->
+                    <div class="left_font">
+                        <div class="mypage">
+                            <nav>
+                                <div class="top">회원정보 수정</div>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- 일러스트 이미지 -->
+                    <div class="title_right_box">
+                        <img src="https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=ybeUrSjBOXZnYzXPeGpV8EB4nLayDSOijEyayiHqRzP3wf2uZqRIcoNdks4zvn4GD3g57TCf1WZ%2BzJ6F3647Hw%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 회원정보 폼 -->
+        <div class="sub_content">
+            <div class="container">
+                <div class="inner">
+                    <form id="detailForm" name="detailForm" action="/young/user/modify.do" method="post"
+                        enctype="multipart/form-data" autocomplete="off"><input id="useYn" name="useYn" type="hidden"
+                            value="Y"><input id="telNo" name="telNo" type="hidden" value="">
+                        <!-- 수정할 정보 입력 테이블 -->
+                        <table class="detail_table">
+                            <tbody>
+                                <tr>
+                                    <!-- (이후) 전화번호, 이름의 경우 로그인한 회원의 전화번호, 이메일을 출력해야함 -->
+                                    <th><label for="userId">아이디</label></th>
+                                    <td class="userId_reuslt">여기에 로그인 한 회원의 아이디</td>
+                                    <th class="password_th"><label for="password">변경할 비밀번호</label></th>
+                                    <td>
+                                        <input id="password" name="password" type="password" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><label for="userNm">이름(실명)</label></th>
+                                    <td>여기에 사용자 이름</td>
+                                    <th><label for="passwordCheck">변경할 비밀번호 확인</label></th>
+                                    <td>
+                                        <input id="passwordCheck" name="passwordCheck" type="password" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- 이메일 -->
+                                    <th><label for="email">EMAIL</label></th>
+                                    <td>
+                                        <div class="email" rowspan="2">
+                                            <input type="text" class="email" value="" data-path="email"> <!-- (이후) 로그인한 유저의 이메일을 적어놔야함 -->
+                                            <span class="hipen">@</span>
+                                            <!-- 이메일 주소 선택 드롭박스 -->
+                                            <select class="domain" data-path="email">
+                                                <option value="">--선택--</option>
+                                                <option value="naver">naver.com</option>
+                                                <option value="gmail">gmail.com</option>
+                                                <option value="nate">nate.com</option>
+                                                <option value="yahoo">yahoo.co.kr</option>
+                                                <option value="daum">daum.net</option>
+                                                <option value="etc">직접입력</option>
+                                            </select>
+                                            <input type="text" class="etc" value="" data-path="email" hidden> <!-- (이후) 직접입력 선택시 input 박스 생겨야함 -->
+                                        </div>
+                                    </td>
+
+                                    <!-- 일반 회원으로 가입했을 시 일반회원 -->
+                                    <th>휴대폰 번호</th>
+                                    <td>
+                                        <span class="printPhone">010-0000-0000</span> <input type="button" value="다른번호 인증" class="changePhone">
+                                         <!-- (이후) 사용자가 다른번호 인증 버튼을 눌렀을 때 인증번호 발송 버튼으로 변경 -->
+                                        <input type="text" class="inputPhone" hidden>
+                                        <input type="button" value="인증번호 발송" class="sendNumber" hidden>
+                                    </td> <!-- 이후 사용자가 가입시 선택한 사항에 따라 출력 -->
+                                </tr>
+                                <tr>
+                                    <!-- 지역 선택 -->
+                                    <th><label for="">지역</label></th>
+                                    <td>
+                                        <select id="userInfo01" name="userInfo01" class="area1"> <!-- (이후) 사용자가 입력한 지역에 따라 처음에 선택된 상태로 가져와야함 -->
+                                            <!-- 도 -->
+                                            <option value="">-선택-</option>
+                                            <option value="11">서울</option>
+                                            <option value="21">부산</option>
+                                            <option value="22">대구</option>
+                                            <option value="23">인천</option>
+                                            <option value="24">광주</option>
+                                            <option value="25">대전</option>
+                                            <option value="26">울산</option>
+                                            <option value="29">세종</option>
+                                            <option value="31">경기</option>
+                                            <option value="32">강원</option>
+                                            <option value="33">충북</option>
+                                            <option value="34">충남</option>
+                                            <option value="35">전북</option>
+                                            <option value="36">전남</option>
+                                            <option value="37">경북</option>
+                                            <option value="38">경남</option>
+                                            <option value="39">제주</option>
+                                            <option value="00">전국</option>
+                                        </select>
+                                        <!-- 시, 읍 -->
+                                        <select id="userInfo02" name="userInfo02" class="area2"> <!-- 도 선택에 따라 시, 읍 출력해야함 -->
+                                            <option value="">-선택-</option>
+                                        </select>
+                                    </td>
+
+                                    <!-- (이후) 생산품목 활용 필요 -->
+                                    <th><label for="userInfo03">주요생산품목</label></th>
+                                    <td>
+                                        <select id="selectUserInfo03">
+                                            <option value="">선택</option>
+                                            <option value="-1">직접입력</option>
+                                            <option value="1">사과</option>
+                                            <option value="2">배</option>
+                                            <option value="3">포도</option>
+                                            <option value="4">감귤</option>
+                                            <option value="5">참다래</option>
+                                            <option value="6">매실</option>
+                                            <option value="7">유자</option>
+                                            <option value="8">단감</option>
+                                            <option value="9">복숭자</option>
+                                            <option value="10">복분자</option>
+                                            <option value="11">수박</option>
+                                            <option value="12">참외</option>
+                                            <option value="13">딸기</option>
+                                            <option value="14">오이</option>
+                                            <option value="15">토마토</option>
+                                            <option value="16">메론</option>
+                                            <option value="17">호박</option>
+                                            <option value="18">가지</option>
+                                            <option value="19">고추</option>
+                                            <option value="20">피망</option>
+                                            <option value="21">배추</option>
+                                            <option value="22">양배추</option>
+                                            <option value="23">시금치</option>
+                                            <option value="24">쑥갓</option>
+                                            <option value="25">샐러리</option>
+                                            <option value="26">신선초</option>
+                                            <option value="27">상추</option>
+                                            <option value="28">양상추</option>
+                                            <option value="29">케일</option>
+                                            <option value="30">부추</option>
+                                            <option value="31">당근</option>
+                                            <option value="32">우엉</option>
+                                            <option value="33">무</option>
+                                            <option value="34">생강</option>
+                                            <option value="35">도라지</option>
+                                            <option value="36">마</option>
+                                            <option value="37">양파</option>
+                                            <option value="38">마늘</option>
+                                            <option value="39">보리</option>
+                                            <option value="40">옥수수</option>
+                                            <option value="41">밀</option>
+                                            <option value="42">수수</option>
+                                            <option value="43">메밀</option>
+                                            <option value="44">조</option>
+                                            <option value="45">콩</option>
+                                            <option value="46">논콩</option>
+                                            <option value="47">팥</option>
+                                            <option value="48">감자</option>
+                                            <option value="49">고구마</option>
+                                            <option value="50">참깨</option>
+                                            <option value="51">들깨</option>
+                                            <option value="52">땅콩</option>
+                                            <option value="53">유채</option>
+                                            <option value="54">황기</option>
+                                            <option value="55">오미자</option>
+                                            <option value="56">구기자</option>
+                                            <option value="57">당귀</option>
+                                            <option value="58">강활</option>
+                                            <option value="59">산수유</option>
+                                            <option value="60">맥문동</option>
+                                            <option value="61">곰취</option>
+                                            <option value="62">참취</option>
+                                            <option value="63">곤달비</option>
+                                        </select>
+                                        <!-- (이후) 만약에 직접입력 선택시 집적입력하는 input 태그 만들어야함 -->
+                                        <input type="text" id="inputUserInfo03" value="" style="width:auto; display:none;">
+                                        <input type="hidden" id="userInfo03" name="userInfo03" value="107">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn"> <!-- (이후) 버튼 클릭시 DB 연동 등 작업 필요 -->
+                            <a href="../myPage/myPage.html" class="cancelBtn"><p><img id = "cancelImg" src="images/cancelImage.png">취소</p></a>
+                            <a href="#" class="updateBtn"><p><img id = "updateImg" src="images/writeImage.png">수정</p></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+    $(".cancelBtn").mouseover(function() {
+        $(".cancelBtn").css("background-color", "white").css("color", "black").css("border", "1px solid #8a8a8a");
+        $(".cancelBtn img").css('opacity', '0').stop().attr("src", "images/changeCancel.png").animate({opacity:1}, 500); /* 변경하고자 하는 이미지에 애니메이션 효과 주려면 이렇게 해야한다.. */
+    }) ;
+
+
+    $(".cancelBtn").mouseout(function() {
+        $(".cancelBtn").css("background-color", "#8a8a8a").css("color", "white");
+        $(".cancelBtn img").attr("src", "images/cancelImage.png")
+    })
+
+    $(".updateBtn").mouseover(function() {
+        $(".updateBtn").css("background-color", "white").css("color", "black").css("border", "1px solid #8a8a8a");
+        $(".updateBtn img").css('opacity', '0').stop().attr("src", "images/changeWriteImage.png").animate({opacity:1}, 500); /* 변경하고자 하는 이미지에 애니메이션 효과 주려면 이렇게 해야한다.. */
+    }) ;
+
+
+    $(".updateBtn").mouseout(function() {
+        $(".updateBtn").css("background-color", "#8a8a8a").css("color", "white");
+        $(".updateBtn img").attr("src", "images/writeImage.png")
+    })
+    
+    
+
+</script>
+</html>
