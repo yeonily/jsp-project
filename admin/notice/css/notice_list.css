@@ -1,0 +1,31 @@
+div#container .chart-no {
+    margin-top: 95px;
+}
+
+th.num { width: 6%; }
+th.title { width: 26%; }
+th.content { width: 30%; }
+th.id { width: 7%; }
+th.file-check { width: 7%; }
+th.date { width: 11%; }
+th.hits { width:  7%; }
+th.delete { width: 6%; }
+
+td input[type="button"] {
+    width: 100%;
+    padding: 3px 1px;
+    border: 1px solid rgb(184, 184, 184);
+    box-shadow: 0.1px 0.1px 8px -5px #000000;  
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.9vw;
+    color: #4d4d4d;
+    cursor: pointer;
+    word-break: keep-all;
+}
+
+td.delete input[type="button"] { background: #f5c7bd; }
+
+td.wait input[type="button"]:hover { background: #e1e2e4;}
+td.delete input[type="button"]:hover { background: #eeb6aa; }
