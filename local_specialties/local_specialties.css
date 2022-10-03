@@ -7,6 +7,7 @@
     font-style: normal;
 }
 
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     font: 17px/1.5 "ONE-Mobile-Regular";
     letter-spacing: -0.05em;
@@ -17,10 +18,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-tap-highlight-color: transparent;
     font-size: inherit;
 }
-
 body {
     margin: 0;
 }
+
 .test{
     background-image: url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=l%2BFlhnD03GsJ%2Fchs5vcnWANjaPVA8jceO3zpgcD7G8yWklFi5FyBa5sbhA28X6QWCVj7vfrcTg1bL8qWZ5zq2A%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
     padding: 4.706rem 0 0;
@@ -396,8 +397,7 @@ ul.lgr_ul{
 }
 li.nowMenu{
     float: left;
-    color: #333;
-    font-weight: 600;
+    color: rgb(0,0,0,.5);
     font-size: 0.941rem;
 }
 li.nowMenu::after{
@@ -411,7 +411,8 @@ li.nowMenu::after{
 }
 .secondMenu{
     float: right;
-    color: rgb(0,0,0,.5);
+    color: #333;
+    font-weight: 600;
     font-size: 0.941rem;
 }
 .title_right_box {
