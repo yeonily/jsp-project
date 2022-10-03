@@ -4,7 +4,7 @@
 .title_right_box {
     position: absolute;
     right: 0;
-    bottom: 0rem;
+    bottom: 1rem;
     vertical-align: top;
     display: inline-block;
 }

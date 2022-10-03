@@ -53,11 +53,11 @@
 }
 /* 프로그램 신청 내역 ---- width 설정 */
 .supp_info .myProgramMore>h4:after {
-    width: 324px;
+    width: 285px;
 }
 /* 게시판 활동 내역 ---- width 설정 */
 .supp_info .myPostMore>h4:after {
-    width: 347px;
+    width: 311px;
 }
 
 

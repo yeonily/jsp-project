@@ -1,8 +1,5 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #666666;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -14,136 +11,26 @@ form.dropUserForm div.title {
 form.dropUserForm div.title h2 {
     margin-bottom: 50px;
     font-size: 28px;
-    color: #333333;
 }
 form.dropUserForm {
     width: 640px;
     margin: 0 auto;
 }
+div.dropContainer {
+    font-size: 14px;
+}
 div.dropContainer div.dropInfo {
     padding: 10px 0 10px 20px;
-    display: flex;
+    background-color: pink;
+    display: inline-flex;
 }
 
 /* 회원탈퇴안내 */
-div.dropInfo div#bigca {
+div.dropInfo div.bigca {
     width: 139px;
     padding-top: 12px;
-    color: #333333;
 }
 div.dropInfo div.smallca {
     width: 481px;
     padding-top: 12px;
-}
-div.smallca span {
-    color: #5f0080;
-    display: inline-block;
-    padding: 19px 0 12px;
-}
-
-/* ----------------------------------------------------------------------- */
-/* 비밀번호 입력 부분 */
-div.passwordCheck {
-    display: flex;
-    padding: 10px 20px;
-    line-height: 46px;
-    vertical-align: middle;
-    width: 100%;
-}
-div#passwordCheckText {
-    width: 139px;
-    color: #333333;
-}
-div.passwordInputDiv {
-    width: 50%;
-}
-input.passwordInput {
-    height: 46px;
-    width: 100%;
-    padding: 0px 11px 1px 15px;
-    border: 1px solid rgb(221 221 221);
-    border-radius: 5px;
-}
-
-/* ----------------------------------------------------------------------- */
-/* 불편사항 체크박스(피드백) */
-div.feedback {
-    display: flex;
-    margin: 0 auto;
-}
-div.feedback div#feedbackText {
-    padding: 10px 0 12px 20px;
-    width: 161px;
-    margin-right: 10px;
-    color: #333333;
-}
-div.feedback div.checkBox span {
-    display: inline-block;
-    width: 49%;
-    vertical-align: middle;
-    line-height: 28px;
-    margin-bottom: 13px;
-}
-div.checkBox {
-    padding: 5px 0 0 0;
-}
-div.checkBox span img {
-    line-height: 28px;
-    vertical-align: middle;
-    margin-right: 20px;
-}
-
-/* ----------------------------------------------------------------------- */
-/* 텍스트 필드 */
-/* 임시 div */
-div.feedback {
-    padding: 0px 10px 0px 0px;
-}
-div.feedback div.feedback_back {
-    width: 135px;
-    margin-right: 30px;
-}
-/* textarea */
-div.feedback #feedbackInput {
-    border: 1px solid rgb(221 221 221);
-    border-radius: 5px;
-    resize: none;
-    padding: 20px;
-    width: 480px;
-    font-size: 14px;
-}
-
-/* ----------------------------------------------------------------------- */
-/* 버튼 */
-div.btn {
-    text-align: center;
-    margin: 40px;
-}
-div.btn input[type=button] {
-    padding: 0 10px;
-    height: 44px;
-    width: 120px;
-    margin-right: 5px;
-    border: 1px solid #7fb069;
-    background-color: white;
-    color: #7fb069;
-    cursor: pointer;
-    font-weight: bold;
-}
-div.btn #submitBtn {
-    background-color: #7fb069;
-    color: #ffffff;
-}
-
-/* ----------------------------------------------------------------------- */
-/* 테스트 */
-div.checkBox input[type=checkBox] {
-    display: none;
-}
-div.checkBox input[type=checkBox] + label {
-    display: inline-block;
-    height: 24px;
-    width: 24px;
-    background-size: cover;
-    background-image: url("images/uncheckedBox.png");
 }
