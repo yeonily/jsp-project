@@ -1,0 +1,36 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 회원탈퇴 안내문 */
+form.dropUserForm div.title {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+form.dropUserForm div.title h2 {
+    margin-bottom: 50px;
+    font-size: 28px;
+}
+form.dropUserForm {
+    width: 640px;
+    margin: 0 auto;
+}
+div.dropContainer {
+    font-size: 14px;
+}
+div.dropContainer div.dropInfo {
+    padding: 10px 0 10px 20px;
+    background-color: pink;
+    display: inline-flex;
+}
+
+/* 회원탈퇴안내 */
+div.dropInfo div.bigca {
+    width: 139px;
+    padding-top: 12px;
+}
+div.dropInfo div.smallca {
+    width: 481px;
+    padding-top: 12px;
+}

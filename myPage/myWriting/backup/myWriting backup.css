@@ -1,0 +1,190 @@
+/* css 초기 설정 */
+* { padding: 0; margin: 0; }
+ul, ol { list-style: none; }
+a { text-decoration: none; color: #4a4a4a;}
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+/* --------------------------- */
+div.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+/* 입력 외곽부분 */
+div.searchOut {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+div.searchInner {
+    padding: 13px 20px;
+    border: 1px solid #e6e6e6;
+    background-color: #fbfbfb;
+    height: 50px;
+}
+
+/* --------------------------- */
+/* select Box */
+span.selectBox {
+    position: relative;
+    float: left;
+    width: 185px;
+    margin-right: -185px;
+}
+span.selectDrop {
+    display: block;
+}
+select.selectChoice {
+    width: 100%;
+    height: 41px;
+    padding: 8px;
+}
+select.selectChoice option {
+    display: block;
+    padding: 0 2px 1px;
+}
+
+/* --------------------------- */
+/* 검색(input) */
+span.inputLine {
+    margin-right: -44px;
+    float: left;
+    width: 100%;
+}
+span.inputBox {
+    margin-left: 185px;
+    display: block;
+    margin-right: 44px;
+    padding: 0 25px 0 1px;
+}
+input.searchBox {
+    width: 100%;
+    height: 37px;
+    margin: 0 -24px 0 0;
+    
+    padding: 0 12px;
+}
+
+/* --------------------------- */
+/* 검색 버튼 */
+span.submit {
+    float: left;
+    width: 44px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+button.submitBtn {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    height: 41px;
+    color: #fff;
+    line-height: 41px;
+    text-align: center;
+    background-image: url("images/search.png");
+}
+
+
+/* 공동 처리 */
+input.searchBox, span.inputBox, select.selectChoice, button.submitBtn {
+    border: 1px solid #d9d9d9;
+    color: #7b7b7b;
+}
+
+
+/* --------------------------- */
+/* 타이틀 */
+div.title h2{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    letter-spacing: -0.08em;
+    color: #5c5c5c;
+    line-height: 45px;
+    font-weight: 500;
+}
+div.subtitle {
+    border-bottom: 2px solid #565656;
+    border-top: 1px dashed #d8d8d8;
+}
+div.subtitle div.textContent{
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 0 15px;
+}
+
+/* 서브 타이틀(큰 글씨) */
+div.textContent p.bigText {
+    font-size: 30px;
+    color: #252323;
+    letter-spacing: -0.08em;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+div.textContent p.bigText span.greenText {
+    color: #599618;
+}
+
+/* 서브 타이틀(작은 글씨) */
+p.smallText {
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 500;
+}
+
+/* --------------------------- */
+/* 총 건수 */
+p.countText img {
+    margin-right: 5px;
+}
+p.countText {
+    font-size: 13.5px;
+    padding: 0 0 5px 18px;
+    float: right;
+    color: #666666;
+    letter-spacing: -0.03em;
+}
+
+/* --------------------------- */
+/* 검색 리스트 */
+div.boardList {
+    width: 100%;
+    clear: both;
+    border-top: 2px solid #565656;
+    border-bottom: 1px solid #ababab;
+    font-size: 13px;
+    font-weight: 400;
+    color: #3d3d3d;
+}
+table.boardTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.boardTable th:first-child {
+    border-left: 1px solid #e8e6e6;
+}
+
+table.boardTable tr th{
+    padding: 12px 0;
+    border-right: 1px solid #e8e6e6;
+    border-top: 2px solid #565656;
+    
+}
+table.boardTable tr .number, .icon, .writer, .date, .viewCnt {
+    text-align: center;
+    padding: 11px 0 11px 0;
+}
+table.boardTable tr td.title {
+    padding-left: 10px;
+}
+
+table.boardTable tr td {
+    font-size: 14px;
+}
+
+
+
