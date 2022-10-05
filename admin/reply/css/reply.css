@@ -6,18 +6,15 @@ div#container .chart-no {
     margin-top: 95px;
 }
 
-th.num { width: 6%; }
-th.title { width: 21%; }
-th.content { width: 27%; }
-th.id { width: 7%; }
-th.file-check { width: 7%; }
+th.num { width: 9%; }
+th.content { width: 50%; }
+th.id { width: 12%; }
 th.date { width: 13%; }
-th.hits { width:  7%; }
-th.revise, th.delete { width: 6%; }
+th.boardNum { width:  10%; }
+th.delete { width: 6%; }
 
-td.revise, td.delete { padding: 0 0.3vw; }
+td.delete { padding: 0 0.3vw; }
 
-td.revise input[type="button"]:hover { background: #e1e2e4;}
 td.delete input[type="button"] { background: #f5c7bd; }
 td.delete input[type="button"]:hover { background: #eeb6aa; }
 
