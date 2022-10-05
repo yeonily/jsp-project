@@ -41,9 +41,9 @@ function saveCheck(){
     if(flag) location.href = list;
 }
 
-// 글 삭제
-function deleteListCheck(){
-    var msg = "이 글을 삭제 하시겠습니까?";
+// 댓글 삭제
+function deleteReplyCheck(){
+    var msg = "이 댓글을 삭제 하시겠습니까?";
     var flag = confirm(msg);
 
     if(flag) alert('삭제 완료');

@@ -32,18 +32,18 @@ function noCheck2(){
     if(flag) alert('지원자 거절 완료');
 }
 
-// 프로그램 지원자 거절
+// 공지 글 작성 나가기
 function saveCheck(){
     var msg = "지금 나가면 글이 저장되지 않습니다.\n그래도 나가시곘습니까?";
     var flag = confirm(msg);
-    list = 'notice_list.jsp';
+    list = 'notice_list.html';
 
     if(flag) location.href = list;
 }
 
-// 글 삭제
-function deleteListCheck(){
-    var msg = "이 글을 삭제 하시겠습니까?";
+// 댓글 삭제
+function deleteReplyCheck(){
+    var msg = "이 댓글을 삭제 하시겠습니까?";
     var flag = confirm(msg);
 
     if(flag) alert('삭제 완료');

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/font.css"> <!-- 폰트 -->
     <link rel="stylesheet" href="../css/side_menu.css"> <!-- 사이드 메뉴 & 해더 -->
     <link rel="stylesheet" href="../css/contents.css"> <!-- 컨텐츠 공통 스타일 -->
-    <link rel="stylesheet" href="../css/part_participant.css"> <!-- 테이블 개별 스타일 -->
+    <link rel="stylesheet" href="../css/reply.css"> <!-- 테이블 개별 스타일 -->
     <link rel="stylesheet" href="../css/form.css"> <!-- 검색 폼 & 테이블 공통 스타일 -->
     <link rel="stylesheet" href="../css/page.css"> <!-- 페이징 -->
     <!-- 사이드 메뉴 -->
@@ -16,7 +16,7 @@
     <script src="../js/side_menu.js"></script>
     <!-- 버튼 클릭 시 확인 알림창 -->
     <script src="../js/check.js"></script>
-    <title>관리자-아르바이트 지원자 관리</title>
+    <title>관리자-댓글 관리</title>
 </head>
 
 <body>
@@ -83,40 +83,21 @@
         <div id="container">
             <!-- 헤더 -->
             <header>
-                <span id="admin-header-title">아르바이트 지원자 관리</span>
+                <span id="admin-header-title">소통공간 댓글 관리</span>
                 <span id="admin-mode">관리자 모드</span>
                 <span id="userCount">가입된 회원 수 총 <strong> 21343 </strong>명</span>
             </header>
 
-            <!-- 컨텐츠 상단 통계 -->
-            <div id="contents-top">
-                <div class="content c-left">
-                    <div class="title week">최근 일주일</div>
-                    <div id="counts-group">
-                        <div class="counts">
-                            <!-- 오늘 추가 되는 프로그램 수 -->
-                            <div class="count-title">지원자</div>
-                            <span class="count">1</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- 차트 -->
-                <div class="content">
-                    <div id="stickChart"></div>
-                </div>
-            </div>
-
             <!-- 컨텐츠 검색 부분 -->
-            <div class="p-contents">
+            <div class="p-contents chart-no">
 
                 <!-- 검색어 입력 폼 -->
                 <form action="" name="searchForm" method="post">
                     <div class="search-form">
                         <span class="s-form">
-                            <select name="searchSelect" class="val">
-                                <option value="programName">아르바이트명</option>
+                            <select name="searchSelect">
                                 <option value="id">아이디</option>
-                                <option value="address">위치</option>
+                                <option value="content">내용</option>
                             </select>
                         </span>
                         <span class="s-f-input">
@@ -131,37 +112,30 @@
                 </form>
                 
             </div>
-
+            
             <!-- 프로그램 리스트 출력 틀 -->
             <div class="p-contents contents-bottom">
-                
                 <span class="list-count">총
                     <span>2476</span>건
                 </span>
-                
+            
                 <table>
                     <tr class="title">
-                        <th class="num">번호</th>
+                        <th class="num">댓글번호</th>
+                        <th class="content">내용</th>
                         <th class="id">아이디</th>
-                        <th class="title">프로그램명</th>
-                        <th class="work-date">작업날짜</th>
-                        <th class="work-time">작업시간</th>
-                        <th class="crop">작물</th>
-                        <th class="address">위치</th>
-                        <th class="date">신청날짜</th>
+                        <th class="date">작성날짜</th>
+                        <th class="boardNum">게시판번호</th>
                         <th class="delete"></th>
                     </tr>
                     <!-- ↓ 데이터 출력 -->
                     <tr>
-                        <td>1</td>
-                        <td>나랑농부할래</td>
-                        <td class="title" onclick="location.href='#'">잡초 뽑기</td>
-                        <td>2022-10-11</td>
-                        <td>5h</td>
-                        <td>잡초</td>
-                        <td>서울</td>
+                        <td>12432</td>
+                        <td class="content">첫 번째 댓글입니다.</td>
+                        <td>ImYour농부</td>
                         <td>2022-10-03 10:00</td>
-                        <td class="delete"><input type="button" value="거절" onclick="noCheck2()"></td>
+                        <td>86</td>
+                        <td class="delete"><input type="button" value="삭제" onclick="deleteReplyCheck()"></td>
                     </tr>
                 </table>
 
@@ -184,6 +158,9 @@
                        <a class="arrow nnext" href="#"></a>
                     </div>
                 </div>
+                <div id="write">
+                    <input type="button" onclick="location.href='notice_write.html'" value="작성">
+                </div>
 
             </div>
 
@@ -192,8 +169,4 @@
     </div>
 
 </body>
-<!-- 차트 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="../js/chartAPI_stick.js"></script>
 <html>

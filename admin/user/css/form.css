@@ -142,3 +142,45 @@ td.title:hover {
     color: #2e44be;
     font-weight: 600;
 }
+
+
+@media screen and (max-width: 990px) {
+    div#contents-top {
+        flex-wrap: wrap;
+    }
+
+    
+div#contents-top div.c-left {
+        margin-bottom: 12px;
+    }
+
+    div.content {
+        width: 70vw;
+        height: 27vw;
+        min-height: 250px;
+    }
+
+    div.content div.title { margin-bottom: 6%; }
+
+    div#lineChart { padding-top: 5%; }
+
+    div.contents-bottom { margin-top: 10px; }
+
+    div.contents-bottom span.caption {  font-size: 12px; }
+
+    div.contents-bottom input[type="button"] {
+        top: 15px;
+        right: 3vw;
+        font-size: 11px;
+    }
+
+    table { border-spacing: 0 3px; }
+    
+    table tr.title th {
+        font-size: 11px;
+        line-height: 18px;
+    }
+    table tr td {
+        font-size: 12px;
+    }
+}
