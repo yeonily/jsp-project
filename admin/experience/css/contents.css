@@ -21,7 +21,7 @@ div.content div.title {
     margin-bottom: 4%;
     padding: 10px 20px;
     border-bottom: 1px solid #47474734;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 35px;
@@ -67,6 +67,31 @@ div.contents-bottom {
     box-shadow: 0.1px 0.1px 8px -5px #7c7c7c;
 }
 
+table {
+    table-layout: fixed;
+    width: 100%;
+    white-space: nowrap;
+}
+
+table td {
+    display: table-cell;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+td input[type="button"] {
+    width: 100%;
+    padding: 3px 1px;
+    border: 1px solid rgb(184, 184, 184);
+    box-shadow: 0.1px 0.1px 8px -5px #000000;  
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.9vw;
+    color: #4d4d4d;
+    cursor: pointer;
+    word-break: keep-all;
+}
 
 @media screen and (max-width: 1030px) and (min-width: 990px) {
     table th {

@@ -1,0 +1,256 @@
+@font-face {
+    font-family: "one";
+    src: url("fonts/본문체/ONE\ Mobile\ OTF\ Regular.otf") format("truetype");
+    font-weight: normal;
+}
+body {
+    font-family: 'one';
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.4em;
+}
+body {
+    color: #333;
+}
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-text-size-adjust: none;
+}
+header.header {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+.common .common_title{
+    background-image:url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=2lUP0R5DD%2FcE9xG4Z1MFWqTYTr98NytuMiEzSs4N44jEkq%2B633YFffxB6MQYKYiyzL6%2B6loOaDTPZnpyutfRzg%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
+
+    height: 17.73em;
+    overflow: hidden;
+   
+}
+.common_wrap{
+    position: relative;
+    margin:auto;
+    max-width: 90rem;
+    height: 100%;
+}
+
+.common_cover{
+    font-size: inherit;
+    font: 17px;
+    letter-spacing: -0.05em;
+    /* margin-bottom: 50px; */
+    
+}
+
+.common_letter_cover{
+    display: block;
+
+}
+
+.common_text{
+    display: inline-block;
+    /* line-height: normal; */
+    font-weight: bold;
+    text-align: center;
+    width: 210px;
+    font-size: 2.824rem;
+    color: #333;
+    padding-top: 100px;
+}
+
+.common_letter{
+    display: inline-block;
+    text-align: center;
+}
+
+ul span{
+    text-decoration: none;
+    color: #333;
+    padding-left: 70px;
+    margin-bottom: 20px;
+    
+}
+
+.common_img{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    left: 1126px;
+    margin-top: -160px;
+}
+
+.page_wrap{
+    position: relative;
+    margin:auto;
+    max-width: 90rem;
+    height: 100%;
+}
+
+.page{
+    margin: 0;
+    /* overflow: hidden; */
+}
+.page_cover{
+    max-width: 112.5rem;
+}
+
+.page_use{
+    margin-top: 91px;
+    overflow: hidden;
+}
+
+.category{
+    margin-left:20px;
+}
+
+.ct1, .ct2, .ct3{
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+    font-size: 18.5px;
+    color: #8a8a8a;
+    height: 60px;
+    background-color: #ccc;
+    width: 24%;
+    text-align: center;
+    line-height: 60px;
+    margin: 0;
+    border-right: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+}
+
+.ct4{
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+    font-size: 18.5px;
+    color: #8a8a8a;
+    height: 60px;
+    width: 24%;
+    text-align: center;
+    line-height: 60px;
+    margin: 0;
+    border-right: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    color: #555555;
+    border-bottom: none;
+    background-color: #fff;
+    border-top: solid 3px #7fb069;
+    
+}
+a{
+    text-decoration: none;
+}
+/* 페이지 공통 끝*/
+
+.table_wrap{
+    position: relative;
+    margin:auto;
+    max-width: 90rem;
+    height: 100%;
+}
+
+.table{
+    margin: 30px 151px 0 0;
+}
+
+.table1{
+    padding-top: 30px;
+    margin-left:20px;
+    width: 1400px;
+    height: 520px;
+}
+
+.table1_content1{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 30px;
+    float: left;
+    width: 450px;
+}
+
+.img_box{
+    width: 340px;
+    height: 360px;
+    background-color: #cbdae7;
+    position: relative;
+}
+
+.table1_img{
+    background-color: #cbdae7;
+    }
+
+.table1_content2{
+    float: left;
+    font-size: 18px;
+    width: 920px;   
+}
+
+.note_img p{
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    color: #123a75;
+    font-size: 30px;
+    font-weight: 400;
+}
+.note_img p strong{
+    color: inherit;
+    font-weight: bold;
+}
+
+.table1_content2_first{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 2px dotted #ccc;
+    width: 100%;
+}
+
+.table1_content2_first h4{
+    float: left;
+    width: 160px;
+    padding-left: 16px;
+}
+
+.table1_content2_first .line{
+    margin-left: 175px;
+}
+
+.table1_content2_second{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 2px dotted #ccc;
+    width: 100%;
+}
+
+.table1_content2_second h4{
+    float: left;
+    width: 160px;
+    padding-left: 16px;
+}
+
+.table1_content2_second .line{
+    margin-left: 175px;
+}
+
+.table1_content2_third{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 2px dotted #ccc;
+    width: 100%;
+}
+
+.table1_content2_third h4{
+    float: left;
+    width: 160px;
+    padding-left: 16px;
+}
+/* table1끝 */
