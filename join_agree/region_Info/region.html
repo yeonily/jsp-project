@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sub_title.css"> <!-- 상단 마이페이지 title -->
-    <link rel="stylesheet" href="myProfile.css"> <!-- 내 정보 간단하게 보여주는 폼 -->
-    <link rel="stylesheet" href="delete.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">
-    <title>회원탈퇴</title>
+    <title>지역 정보</title>
+    <link rel="stylesheet" href="region.css">
 </head>
-
 <body>
-    <!-- 헤더 -->
-    <!-- 마우스 갖다대면 보이는 헤더 -->
+
     <div class="lgr_back">
         <div class="lgr_logo_head">
             <div class="lgr_backg_logo">
-                <a href="/young/index.do"><img src="./images/logo_no.png" alt="메인 로고"
+                <a href="/young/index.do"><img src="logo_no.PNG" alt="메인 로고"
                         style="vertical-align: middle; display: inline-block;"></a>
             </div>
         </div>
@@ -68,12 +57,12 @@
             </div>
         </div>
     </div>
-<!-- 헤더 -->
+
     <header class="header">
         <div class="logo_wrap">
             <div class="container">
                 <div class="logo">
-                    <a href="/young/index.do" title="홈"><img src="./images/logo_no.png"
+                    <a href="/young/index.do" title="홈"><img src="logo_no.PNG"
                             alt="똑똑! 청년농부"></a>
                 </div>
                 <div id="gnb_wrap" class="gnb_wrap">
@@ -180,109 +169,82 @@
                   
                 </div>
             </div>
-            <div id="lgr_login" onclick="location.href='/young/login.do'">로그인</div>
-            <div id="lgr_join" onclick="location.href='/young/join.do'">회원가입</div>
+            <!-- <div id="lgr_login" onclick="location.href='/young/login.do'">로그인</div>
+            <div id="lgr_join" onclick="location.href='/young/join.do'">회원가입</div> -->
         </div>
         <div id="lgr_topbtn"><a href="#"><img src="https://www.rda.go.kr/young/images/site/main/common_btn_top.png"></a></div>
     </header>
 
 
-
-
-
-    <!-- ------------------------------------------------ -->
-
-
-    <div class="wrap">
-        <!-- 네비게이션바 아래 title -->
-        <div class="sub_title">
-            <div class="container">
-                <div class="inner">
-                    <!-- 상단 "회원탈퇴" 폰트 -->
-                    <div class="left_font">
-                        <div class="mypage">
-                            <nav>
-                                <div class="top">회원탈퇴</div>
-                            </nav>
-                        </div>
-                    </div>
-
-                    <!-- 일러스트 이미지 -->
-                    <div class="title_right_box">
-                        <img src="https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=ybeUrSjBOXZnYzXPeGpV8EB4nLayDSOijEyayiHqRzP3wf2uZqRIcoNdks4zvn4GD3g57TCf1WZ%2BzJ6F3647Hw%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D">
+<!-- ↑header 자리 =======================================================================================================-->
+<!-- ↑header 자리 =======================================================================================================-->
+<!-- ↑header 자리 =======================================================================================================-->
+<!-- ↑header 자리 =======================================================================================================-->
+    <div class="sub_title">
+        <div class="container">
+            <div class="inner">
+                <div class="title_left_box">
+                    <div class="snb_wrap">
+                        <nav class="snb">
+                            <div class="top" style="display: inline-block">지역정보</div>
+                            <div class="lgr_snb" style="display: inline-block; margin-left: 20px;">
+                                <ul class="lgr_ul">
+                                    <li class="nowMenu"><span>지원사업</span></li>
+                                    <li class="secondMenu"><span>주요정책</span></li>
+                                </ul>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- 회원탈퇴 폼 -->
-        <div class="sub_content">
-            <div class="container">
-                <div class="inner">
-                    <form action="" class="dropUserForm">
-                        <!-- 회원 탈퇴 안내 부분 -->
-                        <div class="title">
-                            <h2>회원탈퇴 안내</h2>
-                        </div>
-                        <div class="dropContainer">
-                            <div class="dropInfo">
-                                <div id="bigca">회원탈퇴안내</div>
-                                <div class="smallca">
-                                    <p>고객님께서 회원 탈퇴를 원하신다니 저희 서비스가 많이 부족하고 미흡했나봅니다. 불편하셨던 점이나 불편사항을 알려주시면 적극 반영해서 고객님의 불편함을 해결해 드리도록 노력하겠습니다.</p>
-                                    <span>아울러 회원 탈퇴시의 아래 사항을 숙지하시기 바랍니다.</span>
-                                    <p>1. 회원 탈퇴 후 30일간 재가입이 불가능합니다.</p>
-                                    <p>2. 회원 탈퇴 기타 문의사항은 이메일을 통해서 가능합니다.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 비밀번호 입력 및 확인하는 부분 -->
-                        <div class="passwordCheck">
-                            <div id="passwordCheckText">비밀번호 입력</div>
-                            <div class="passwordInputDiv">
-                             <input type="text" class="passwordInput" placeholder="현재 비밀번호를 입력해주세요">
-                            </div>
-                        </div>
-
-                        <!-- 불편사항 체크 부분 -->
-                        <div class="feedback">
-                            <div id="feedbackText">무엇이 불편하였나요?</div>
-                            <div class="checkBox">
-                                <input type="checkbox" id="box1"><label for="box1"></label>
-                                <input type="checkbox" id="box2"><label for="box2"></label>
-                                <!-- <span><img src="images/uncheckedBox.png">홈페이지 이용 불편</span>
-                                <span><img src="images/uncheckedBox.png">프로그램 다양성 부족</span>
-                                <span><img src="images/uncheckedBox.png">개인정보 유출 우려</span>
-                                <span><img src="images/uncheckedBox.png">서비스 불친절</span> -->
-                            </div>
-                            <!-- <div class="feedbackTextArea">
-                                <textarea name="피드백" id="feedbackText" cols="30" rows="10"></textarea>
-                            </div> -->
-                        </div>
-
-                        <!-- 텍스트 필드 -->
-                        <div class="feedback">
-                            <div class="feedback_back"></div>
-                            <textarea id="feedbackInput" cols="35" rows="8"></textarea>
-                        </div>
-
-                        <!-- 버튼 -->
-                        <div class="btn">
-                            <input type="button" value="취소" id="calcelBtn" onclick="back()">
-                            <input type="button" value="탈퇴" id="submitBtn">
-                        </div>
-                    </form>
+                <div class="title_right_box">
+                    <img src="https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=8nFVTgUIDUlBiYgKluFrhBdHVni9G2K67o64OtO8tD1DEXBRoHgiiIK%2BvPxFADkbugGa28PnSO6qNVxcSqtCKg%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D">
                 </div>
             </div>
         </div>
     </div>
+<!-- -================================================================================================================== -->
+<!-- -================================================================================================================== -->
+<!-- -================================================================================================================== -->
 
-    <!-- 푸터 -->
+<div class="inner">
+<div class="sub03_tax_box">
+    <ul>
+        <li class="tax_b1">
+            <div class="tax_text">
+            <p class="f_01">마을회관 위치 확인하기</p>
+        
+            <p class="f_02">간단하게 마을회관 위치를 확인 할 수 있습니다.</p>
+            </div>
+        
+            <div class="btn_wrap">
+           <input type="text" placeholder="원하는 지역을 입력하세요.">
+            </div>
+            </li>
+    </ul>
+</div>
+
+    <div class="map">
+        <img src="wleh.png" class="map_photos">
+    </div>
+</div>     
+
+
+
+
+
+
+
+
+<!-- footer 자리======================================================================================================================= -->
+<!-- footer 자리======================================================================================================================= -->
+<!-- footer 자리======================================================================================================================= -->
+<!-- footer 자리======================================================================================================================= -->
+
     <footer class="footer">
         <div class="bottom_link">
             <div class="container">
                 <div class="logo">
-                    <img src="./images/logo_white.png" style="vertical-align: middle; width: 130%;"
+                    <img src="logo_white.png" style="vertical-align: middle; width: 130%;"
                         alt="똑똑! 청년농부">
                 </div>
                 <ul class="list_link">
@@ -313,88 +275,74 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script>
-    var checked = $("#box1").prop("checked");
-
-    function back() {
-        location.href = "../myPage/myPage.html";
-    }
-
-    $("#box1").click(function() {
-        if(checked) {
-            $("#box1 + label").css("background", "url('./images/uncheckedBox.png')");
-            checked = $("#box1").prop("checked");
-        } else {
-            $("#box1 + label").css("background", "url('./images/checkedBox.png')");
-            checked = $("#box1").prop("checked");
-        }
-        console.log($("#box1").prop("checked"));
-    })
-
-    /* 헤더 적용 스크립트 */
     var GNB;
-    $(function () {
-        GNB = $('#gnb');
-        GNB.find('>ul>li>a').on('mouseenter', function (e) {
-            e.preventDefault();
-            GNB.find('>ul>li>ul[data-level="2"]:visible').parent('li').removeClass('on');
-            $(this).next('ul[data-level="2"]:hidden').parent('li').addClass('on');
-        }).focus(function () {
-            $(this).mouseover();
-        }).end().mouseleave(function () {
-            GNB.find('>ul>li>ul[data-level="2"]').prev('a').parent().siblings().removeClass('on');
-        }).find('li').last().focusout(function () {
-            $(this).mouseleave();
-        });
-    });
-
-    $(document).ready(function () {
-        $('#gnb_wrap').mouseover(function () {
-            $('.lgr_back').css('display', 'block');
+        //전체 메뉴 HOVER , FOCUS
+        $(function () {
+            GNB = $('#gnb');
+            GNB.find('>ul>li>a').on('mouseenter', function (e) {
+                e.preventDefault();
+                GNB.find('>ul>li>ul[data-level="2"]:visible').parent('li').removeClass('on');
+                $(this).next('ul[data-level="2"]:hidden').parent('li').addClass('on');
+            }).focus(function () {
+                $(this).mouseover();
+            }).end().mouseleave(function () {
+                GNB.find('>ul>li>ul[data-level="2"]').prev('a').parent().siblings().removeClass('on');
+            }).find('li').last().focusout(function () {
+                $(this).mouseleave();
+            });
         });
 
-        $('.lgr_back').mouseleave(function () {
-            $('.lgr_back').css('display', 'none');
+        // 상단 메뉴 있었다가 없어지기
+        $(document).ready(function () {
+            $('#gnb_wrap').mouseover(function () {
+                $('.lgr_back').css('display', 'block');
+            });
+
+            $('.lgr_back').mouseleave(function () {
+                $('.lgr_back').css('display', 'none');
+            })
         })
-    })
 
-    $('.j1').mouseover(function () {
-        $('.j1').siblings('#k1').childred('a').css("color", "#7fb069");
-    });
+        // 자녀 항목들 mouseover시 부모 타이틀 색 변경
 
-    $('.j1').mouseleave(function () {
-        $('.j1').siblings('#k1').childred('a').css("color", "#333333");
-    });
+        $('.j1').mouseover(function () {
+            $('.j1').siblings('#k1').childred('a').css("color", "#7fb069");
+        });
 
-    $('.j2').mouseover(function () {
-        $('#k2').css('color', '#7fb069');
-    });
+        $('.j1').mouseleave(function () {
+            $('.j1').siblings('#k1').childred('a').css("color", "#333333");
+        });
 
-    $('.j2').mouseleave(function () {
-        $('#k2').css('color', '#333333');
-    });
+        $('.j2').mouseover(function () {
+            $('#k2').css('color', '#7fb069');
+        });
 
-    $('.j3').mouseover(function () {
-        $('#k3').css('color', '#7fb069');
-    });
+        $('.j2').mouseleave(function () {
+            $('#k2').css('color', '#333333');
+        });
 
-    $('.j3').mouseleave(function () {
-        $('#k3').css('color', '#333333');
-    });
+        $('.j3').mouseover(function () {
+            $('#k3').css('color', '#7fb069');
+        });
 
-    $('.j4').mouseover(function () {
-        $('#k4').css('color', '#7fb069');
-    });
+        $('.j3').mouseleave(function () {
+            $('#k3').css('color', '#333333');
+        });
 
-    $('.j4').mouseleave(function () {
-        $('#k4').css('color', '#333333');
-    });
+        $('.j4').mouseover(function () {
+            $('#k4').css('color', '#7fb069');
+        });
 
-    $('.j5').mouseover(function () {
-        $('#k5').css('color', '#7fb069');
-    });
+        $('.j4').mouseleave(function () {
+            $('#k4').css('color', '#333333');
+        });
 
-    $('.j5').mouseleave(function () {
-        $('#k5').css('color', '#333333');
-    });
+        $('.j5').mouseover(function () {
+            $('#k5').css('color', '#7fb069');
+        });
+
+        $('.j5').mouseleave(function () {
+            $('#k5').css('color', '#333333');
+        });
 </script>
 </html>
