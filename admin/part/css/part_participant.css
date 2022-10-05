@@ -16,13 +16,13 @@ div#stickChart {
 div.content div.week { font-size: 16px; }
 
 th.num { width: 7%; }
-th.id { width: 13%; }
+th.id { width: 12%; }
 th.title { width: 20%; }
 th.work-date { width: 11%; }
 th.work-time { width: 10%; }
 th.crop { width: 13%; }
 th.address { width: 9%; }
-th.date { width: 11%; }
+th.date { width: 12%; }
 th.delete { width: 6%; }
 
 td.delete { padding: 0 0.3vw; }

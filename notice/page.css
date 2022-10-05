@@ -1,10 +1,7 @@
 
-
 #page {
 	margin: 0 auto;
 	text-align:center;
-	font-size: 0;
-	padding: 25px 0;
  }
 
 .page_nation {
@@ -13,7 +10,7 @@
 .page_nation .none {
 	display:none;
 }
-.page_nation a {
+.page_nation a.page-num {
 	display:block;
 	margin:0 3px;
 	float:left;
@@ -27,28 +24,29 @@
 	color:#999999;
 	text-decoration:none;
 }
-.page_nation .arrow {
+.page_nation a.arrow {
 	border:1px solid #ccc;
 }
-.page_nation .pprev {
+.page_nation a.pprev {
 	width:28px;
 	height:28px;
 	background:#f8f8f8 url('image/page_pprev.png') no-repeat center center;
 	margin-left:0;
 }
-.page_nation .prev {
+.page_nation a.prev {
 	background:#f8f8f8 url('image/page_prev.png') no-repeat center center;
 	margin-right:7px;
 }
-.page_nation .next {
+.page_nation a.next {
 	background:#f8f8f8 url('image/page_next.png') no-repeat center center;
 	margin-left:7px;
 }
-.page_nation .nnext {
+.page_nation a.nnext {
 	background:#f8f8f8 url('image/page_nnext.png') no-repeat center center;
 	margin-right:0;
 }
-.page_nation a.active, a:hover {
-	border: 1px solid #ed8d77;
-	color:#ed8d77;
+
+.page_nation a.active, .page_nation a.page-num:hover {
+	border: 1px solid #3B6A39;
+	color:#3B6A39;
 }

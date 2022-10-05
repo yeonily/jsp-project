@@ -7,6 +7,7 @@
     font-style: normal;
 }
 
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     font: 17px/1.5 "ONE-Mobile-Regular";
     letter-spacing: -0.05em;
@@ -351,7 +352,7 @@ body {
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    bottom: 5.353rem;
+    bottom: 6.353rem;
     position: relative;
     height: 17.353rem;
 }
@@ -529,29 +530,58 @@ tr {
     color: #585858;
     background: #ffffff;
 }
-.pageList{
-    line-height: normal;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
+
+/* 페이지 리스트 */
+#page {
+	margin: 0 auto;
+	text-align:center;
+    padding-top: 20px;
+    padding-bottom: 14px;
+ }
+
+.page_nation {
+	display:inline-block;
 }
-.pageList strong a {
-    font-weight: normal;
-    text-decoration: none;
-    color: #2f6aa6;
-    font-size: 18px;
-    color: #323232;
-    margin: 0 -2px;
-    padding: 3px 6px;
-    vertical-align: top;
-    position: relative;
-    z-index: 2;
+.page_nation .none {
+	display:none;
 }
-.pageList Strong a.active{
-    font-weight: bold;
-    color: #ff6c00;
-    font-size: 18px;
-    text-decoration: underline;
+.page_nation a {
+	display:block;
+	margin:0 3px;
+	float:left;
+	border:1px solid #e6e6e6;
+	width:28px;
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	background-color:#fff;
+	font-size:13px;
+	color:#999999;
+	text-decoration:none;
+}
+.page_nation .arrow {
+	border:1px solid #ccc;
+}
+.page_nation .pprev {
+	width:28px;
+	height:28px;
+	background:#f8f8f8 url('image/page_pprev.png') no-repeat center center;
+	margin-left:0;
+}
+.page_nation .prev {
+	background:#f8f8f8 url('image/page_prev.png') no-repeat center center;
+	margin-right:7px;
+}
+.page_nation .next {
+	background:#f8f8f8 url('image/page_next.png') no-repeat center center;
+	margin-left:7px;
+}
+.page_nation .nnext {
+	background:#f8f8f8 url('image/page_nnext.png') no-repeat center center;
+	margin-right:0;
+}
+
+.page_nation a.active, .page_nation a:hover {
+	border: 1px solid #ed8d77;
+	color:#ed8d77;
 }

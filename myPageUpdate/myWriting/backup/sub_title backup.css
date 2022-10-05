@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "one";
+    src: url("fonts/본문체/ONE\ Mobile\ Regular.ttf") format("truetype");
+    font-weight: 100;
+}
+
+/* CSS 초기설정 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font: 17px/1.5;
+    font-family: "one";
+}
+
+
+/* ------------------------------------------------------------------ */
+div.wrap {
+    width: 100%;
+}
+
+
+/* 네비게이션바 아래 title */
+div.sub_title {
+    background-color: antiquewhite;
+    background-image: url("https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=CwpuoJHL%2FKLc0%2BUEvvptYk3Doye33FfKkrZOai5V4eyfJpwkcUEvM%2Bk1GaKR5UCwCQ2OQHfSCOCioOTsdp1yYw%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D");
+    padding: 4.706rem 0 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    bottom: 5.353rem;
+    height: 18.253rem
+}
+
+/* 큰 틀 사이즈 */
+div.sub_title .container {
+    max-width: 82.353rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 글자,아이콘,이미지 넣을 div */
+div.sub_title .container .inner {
+    width: 100%;
+    height: 15.353em;
+    position: relative;
+}
+
+/* 마이페이지 글씨 */
+div.left_font {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 3.529rem;
+    position: relative;
+    width: 100%;
+}
+
+div.mypage .top {
+    display: inline-block;
+    line-height: normal;
+    font-weight: bold;
+    width: 351px;
+    font-size: 2.824rem;
+    color: #333;
+}
+
+
+/* 일러스트 설정 */
+.title_right_box {
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    vertical-align: top;
+    display: inline-block;
+}
+.title_right_box img {
+    display: block;
+}
+div.title_right_box div.communityImg {
+    width: 362px;
+    height: 229px;
+    background-image: url(images/community.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

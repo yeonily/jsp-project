@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/step_check.css"><!-- 테스트 메뉴 버튼 -->
+    <link rel="stylesheet" href="../css/step.css"><!-- 테스트 스타일 -->
+    <title>Document</title>
+    
+    <!-- 라디오 버튼 연산 -->
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="radioChecked.js"></script> -->
+</head>
+
+<body>
+    <div id="container">
+        <!-- 체크리스트, 테스트 페이지 버튼 -->
+        <div class="step-menu">
+            <ul>
+                <li>
+                    <a href="step_check.html">귀농단계별 체크리스트</a>
+                </li>
+                <li>
+                    <a class="now" href="preparation.html">귀농귀촌준비도 테스트</a>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- 준비도 테스트 -->
+        <div class="checklist-wrap">
+            <!-- 점수표 -->
+            <div class="score-table">
+                <table class="score-table">
+                    <colgroup>
+						<col style="width:40%;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+					</colgroup>
+                    <tbody>
+                        <tr>
+							<th rowspan="2" class="score-title" scope="col">평가점수</th>
+							<th>매우 긍정</th>
+							<th>긍정</th>
+							<th>보통</th>
+							<th>부정</th>
+							<th>매우 부정</th>
+						</tr>
+                        <tr>
+							<td>5점</td>
+							<td>4점</td>
+							<td>3점</td>
+							<td>2점</td>
+							<td>1점</td>
+						</tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 테스트 표 -->
+            <div class="check-table">
+                <table class="check-table">
+                    <colgroup>
+						<col style="width:40%;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+						<col style="width:12%;">
+					</colgroup>
+                    <thead>
+						<tr>
+							<th>진단(A) 영농에 대한 적성</th>
+							<th>5점</th>
+							<th>4점</th>
+							<th>3점</th>
+							<th>2점</th>
+							<th>1점</th>
+						</tr>
+					</thead>
+                    <tbody>
+						<tr>
+							<td class="td_left test-check" scope="row">1. 건강 및 체력에 자신 있다.</td>
+							<td><input type="radio" id="que111" name="que11" class="input_radios" value="5"></td>
+							<td><input type="radio" id="que112" name="que11" class="input_radios" value="4"></td>
+							<td><input type="radio" id="que113" name="que11" class="input_radios" value="3"></td>
+							<td><input type="radio" id="que114" name="que11" class="input_radios" value="2"></td>
+							<td><input type="radio" id="que115" name="que11" class="input_radios" value="1"></td>
+						</tr>
+						<tr>
+							<td class="td_left test-check" scope="row">2. 동식물을 좋아한다.</td>
+							<td><input type="radio" id="que121" name="que12" class="input_radios" value="5"></td>
+							<td><input type="radio" id="que122" name="que12" class="input_radios" value="4"></td>
+							<td><input type="radio" id="que123" name="que12" class="input_radios" value="3"></td>
+							<td><input type="radio" id="que124" name="que12" class="input_radios" value="2"></td>
+							<td><input type="radio" id="que125" name="que12" class="input_radios" value="1"></td>
+						</tr>
+						<tr>
+							<td class="td_left test-check" scope="row">3. 단순 작업도 기분 좋게 한다.</td>
+							<td><input type="radio" id="que131" name="que13" class="input_radios" value="5"></td>
+							<td><input type="radio" id="que132" name="que13" class="input_radios" value="4"></td>
+							<td><input type="radio" id="que133" name="que13" class="input_radios" value="3"></td>
+							<td><input type="radio" id="que134" name="que13" class="input_radios" value="2"></td>
+							<td><input type="radio" id="que135" name="que13" class="input_radios" value="1"></td>
+						</tr>
+						<tr>
+							<td class="td_left test-check" scope="row">4. 사교성이 좋다.</td>
+							<td><input type="radio" id="que141" name="que14" class="input_radios" value="5"></td>
+							<td><input type="radio" id="que142" name="que14" class="input_radios" value="4"></td>
+							<td><input type="radio" id="que143" name="que14" class="input_radios" value="3"></td>
+							<td><input type="radio" id="que144" name="que14" class="input_radios" value="2"></td>
+							<td><input type="radio" id="que145" name="que14" class="input_radios" value="1"></td>
+						</tr>
+						<tr>
+							<td class="td_left test-check" scope="row">5. 사무실보다 야외에서 일하는 게 좋다.</td>
+							<td><input type="radio" id="que151" name="que15" class="input_radios" value="5"></td>
+							<td><input type="radio" id="que152" name="que15" class="input_radios" value="4"></td>
+							<td><input type="radio" id="que153" name="que15" class="input_radios" value="3"></td>
+							<td><input type="radio" id="que154" name="que15" class="input_radios" value="2"></td>
+							<td><input type="radio" id="que155" name="que15" class="input_radios" value="1"></td>
+						</tr>
+						<tr>
+							<td class="td_left test-check" scope="row">6. 혼자보다 여럿이 일하는 것에 더 보람과 흥미를 느낀다.</td>
+							<td><input type="radio" id="que161" name="que16" class="input_radios" value="5"></td>
+							<td><input type="radio" id="que162" name="que16" class="input_radios" value="4"></td>
+							<td><input type="radio" id="que163" name="que16" class="input_radios" value="3"></td>
+							<td><input type="radio" id="que164" name="que16" class="input_radios" value="2"></td>
+							<td><input type="radio" id="que165" name="que16" class="input_radios" value="1"></td>
+						</tr>
+					</tbody>
+                </table>
+            </div>
+
+            <span class="source">(출처: 귀농귀촌길라잡이 국립농업과학원 최윤지박사 저)</span>
+            <div class="next-step">
+                <button type="button" class="next-arrow"><span class="arrow-btn"></span>다음단계</button>
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+</html>
