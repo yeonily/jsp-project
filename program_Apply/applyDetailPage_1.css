@@ -16,7 +16,7 @@ body {
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    bottom: 5.353rem;
+    bottom: 6.353rem;
     position: relative;
     height: 17.353rem;
 }
@@ -263,6 +263,7 @@ a.apply_on{
     line-height: 31px;
     font-weight: 400;
     letter-spacing: -0.5px;
+    padding-top: 3px;
 }
 table{
     border-collapse: collapse;
