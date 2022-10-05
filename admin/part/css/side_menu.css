@@ -36,11 +36,11 @@ nav a:hover {
   color: #333333;
 }
 
-div#team-logo {
+nav div#team-logo {
   margin-left: 10px;
   line-height: 65px;
   font-family: 'Sunflower', sans-serif;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 div.menu-title {

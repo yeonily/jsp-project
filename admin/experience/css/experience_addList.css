@@ -14,14 +14,14 @@ div#lineChart {
 }
 
 th.num { width: 7%; }
-th.title { width: 20%; }
+th.title { width: 19%; }
 th.id { width: 12%; }
 th.work-date { width: 9%; }
 th.work-time { width: 7%; }
-th.crop { width: 11%; }
+th.crop { width: 9%; }
 th.manpower { width: 5%; }
 th.address { width: 8%; }
-th.date { width: 9%; }
+th.date { width: 12%; }
 th.ok, th.no { width: 6%; }
 
 td.ok, td.no { padding: 0 0.3vw; }

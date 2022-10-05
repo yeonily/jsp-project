@@ -18,11 +18,8 @@ div.content-wrap .contents {
 }
 
 div.content-wrap .small {
-    height: 14.8vw;
+    height: 15.5vw;
     margin-bottom: 10px;
-}
-div.content-wrap .double {
-    height: 30vw;
 }
 
 div.content-title {
@@ -58,16 +55,20 @@ div.content-title div.title2 {
 }
 
 div.content-title div.title2 a {
-    margin-top: 10px;
+    padding: 3px 10px;
+    border: 1px solid #33333381;
+    border-radius: 45px;
     text-decoration: 0;
+    line-height: 45px;
     font-size: 12px;
     font-weight: 500;
     color: #33333381;
 }
 
 div.content-title div.title2 a:hover {
+    border: 1px solid #1b2f9e;
     font-weight: 600;
-    color: #201852;
+    color: #1b2f9e;
 }
 
 div.contents .c-content { height: calc(100% - 45px); }
@@ -105,6 +106,13 @@ div.c-content table tr.check {
     background-color: #f7dad288;
 }
 
+div.c-content table tbody.reply td {
+    text-align: left;
+}
+div.c-content table tbody.reply td.content {
+    padding-right: 1vw;
+}
+
 div.c-content table tbody td {
     font-size: 0.8vw;
 
@@ -119,8 +127,15 @@ div.c-content table tbody td.title {
     cursor: pointer;
 }
 
+div.c-content table tbody td.name {
+    padding-left: 30px;
+    text-align: left;
+}
+
+div.c-content table tbody td.email { text-align: left; }
+
 tbody td.title:hover {
-    color: #2e44be;
+    color: #1b2f9e;
     font-weight: 600;
 }
 
@@ -152,4 +167,5 @@ div.c-content table tbody td.date {
         justify-content: center;
     }
 
+    div.c-content table tbody td.name { padding-left: 5%; }
 }
