@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/font.css"> <!-- 폰트 -->
     <link rel="stylesheet" href="../css/side_menu.css"> <!-- 사이드 메뉴 & 해더 -->
     <link rel="stylesheet" href="../css/contents.css"> <!-- 컨텐츠 공통 스타일 -->
-    <link rel="stylesheet" href="../css/experience_list.css"> <!-- 테이블 개별 스타일 -->
+    <link rel="stylesheet" href="../css/board.css">  <!-- 게시판 공통 스타일 -->
     <link rel="stylesheet" href="../css/form.css"> <!-- 검색 폼 & 테이블 공통 스타일 -->
     <link rel="stylesheet" href="../css/page.css"> <!-- 페이징 -->
     <!-- 사이드 메뉴 -->
@@ -16,7 +16,7 @@
     <script src="../js/side_menu.js"></script>
     <!-- 버튼 클릭 시 확인 알림창 -->
     <script src="../js/check.js"></script>
-    <title>관리자-체험 프로그램 관리</title>
+    <title>관리자-소통공간 관리</title>
 </head>
 
 <body>
@@ -78,45 +78,23 @@
         <div id="container">
             <!-- 헤더 -->
             <header>
-                <span id="admin-header-title">농촌 프로그램 관리</span>
+                <span id="admin-header-title">소통공간 관리</span>
                 <span id="admin-mode">관리자 모드</span>
                 <span id="userCount">가입된 회원 수 총 <strong> 21343 </strong>명</span>
             </header>
 
-            <!-- 컨텐츠 상단 통계 -->
-            <div id="contents-top">
-                <div class="content c-left">
-                    <div class="title">Today</div>
-                    <div id="counts-group">
-                        <div class="counts">
-                            <!-- 오늘 추가 되는 프로그램 수 -->
-                            <div class="count-title">추가</div>
-                            <span class="count">1</span>
-                        </div>
-                        <div class="counts">
-                            <!-- 오늘 종료 되는 프로그램 수 -->
-                            <div class="count-title">종료</div>
-                            <span class="count">2</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- 차트 -->
-                <div class="content">
-                    <div id="lineChart"></div>
-                </div>
-            </div>
-
             <!-- 컨텐츠 검색 부분 -->
-            <div class="p-contents">
+            <div class="p-contents chart-no">
 
                 <!-- 검색어 입력 폼 -->
                 <form action="" name="searchForm" method="post">
                     <div class="search-form">
                         <span class="s-form">
                             <select name="searchSelect">
-                                <option value="programName">프로그램명</option>
-                                <option value="id">신청자</option>
-                                <option value="address">주소</option>
+                                <option value="title">제목</option>
+                                <option value="content">내용</option>
+                                <option value="content">아이디</option>
+                                <option value="all">제목 + 내용</option>
                             </select>
                         </span>
                         <span class="s-f-input">
@@ -134,48 +112,34 @@
             
             <!-- 프로그램 리스트 출력 틀 -->
             <div class="p-contents contents-bottom">
-
                 <span class="list-count">총
                     <span>2476</span>건
                 </span>
             
-                <table>
+                <table class="board">
                     <tr class="title">
-                        <th class="num">승인번호</th>
-                        <th class="title">프로그램명</th>
-                        <th class="id">신청자</th>
-                        <th class="work-date">작업날짜</th>
-                        <th class="work-time">작업시간</th>
-                        <th class="manpower">인원</th>
-                        <th class="address">위치</th>
+                        <th class="num">번호</th>
+                        <th class="title">제목</th>
+                        <th class="content">내용</th>
+                        <th class="id">아이디</th>
+                        <th class="file-check">첨부파일</th>
                         <th class="date">작성날짜</th>
+                        <th class="hits">조회수</th>
+                        <th class="reply">댓글</th>
                         <th class="delete"></th>
-                        <th class="wait"></th>
                     </tr>
                     <!-- ↓ 데이터 출력 -->
                     <tr>
                         <td>12432</td>
-                        <td class="title" onclick="location.href='#'">잡초 </td>
-                        <td>나랑농부할래</td>
-                        <td>2022-10-11</td>
-                        <td>5h</td>
-                        <td>1/2</td>
-                        <td>서울</td>
-                        <td>2022-10-01</td>
-                        <td class="wait"><input type="button" value="보류"></td>
-                        <td class="delete"><input type="button" value="삭제" onclick="deleteCheck()"></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td class="title" onclick="location.href='#'">잡초 뽑기</td>
-                        <td>나랑농부할래</td>
-                        <td>2022-10-11</td>
-                        <td>5h</td>
-                        <td>1/2</td>
-                        <td>경기</td>
-                        <td>2022-10-01</td>
-                        <td class="wait"><input type="button" value="보류"></td>
-                        <td class="delete"><input type="button" value="삭제" onclick="deleteCheck()"></td>
+                        <td class="title" onclick="location.href='#'">
+                            ● [ 농산물상자 & 파렛트 ] 저렴히 판매합니다..●</td>
+                        <td class="content">1 . 플라스틱상자 일체 (농산물상자 , 과일상자 , 운반상자 , 계육상자 , 두부상자 등)</td>
+                        <td>Isay농yousay부</td>
+                        <td><img src="../image/fileImage.png"></td>
+                        <td>2022-10-03</td>
+                        <td>86</td>
+                        <td>0</td>
+                        <td class="delete"><input type="button" value="삭제" onclick="deleteListCheck()"></td>
                     </tr>
                 </table>
 
@@ -206,7 +170,4 @@
     </div>
 
 </body>
-<!-- 차트 -->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="../js/chartAPI_contents.js"></script>
 <html>

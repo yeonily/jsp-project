@@ -12,15 +12,15 @@ div#lineChart {
     margin-bottom: 2%;
 }
 
-td.num { width: 7%; }
-td.title { width: 20%; max-width: 300px;}
-td.id { width: 14%; }
-td.work-date { width: 11%; }
-td.work-time { width: 10%; }
-td.address { width: 8%; }
-td.manpower { width: 7%; }
-td.date { width: 11%; }
-td.delete, td.wait { width: 6%; }
+th.num { width: 7%; }
+th.title { width: 20%; max-width: 300px;}
+th.id { width: 14%; }
+th.work-date { width: 11%; }
+th.work-time { width: 10%; }
+th.address { width: 8%; }
+th.manpower { width: 7%; }
+th.date { width: 11%; }
+th.delete, th.wait { width: 6%; }
 
 td.delete, td.wait { padding: 0 0.3vw; }
 td input[type="button"] {

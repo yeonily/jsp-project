@@ -7,9 +7,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="../css/font.css"> <!-- 폰트 -->
    <link rel="stylesheet" href="../css/side_menu.css"> <!-- 사이드 메뉴 & 해더 -->
-
    <!-- 글 작성 폼 -->
    <link rel="stylesheet" href="../css/notice_write.css">
+   
    <!-- 썸머노트 API -->
    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
@@ -22,12 +22,12 @@
    <title>관리자-공지 글 작성</title>
 </head>
 
-<body>
+<body style="background-color: rgba(253, 223, 223, 0.23);">
 
    <div id="wrapper">
       <!-- 세로 메뉴바 -->
       <nav>
-         <div id="team-logo">너와농부싶어</div>
+         <div id="team-logo"><a href="../../main/html/main.html">너와농부싶어</a></div>
 
          <div id='side-menu'>
             <div class="side-menu-contents">
@@ -37,7 +37,7 @@
             <ul>
                <li class='active sub-menu'><a href='#'><span>사용자</span><span class="toggleBtn2">+</span></a>
                   <ul>
-                     <li><a href='#'><span>사용자 관리</span></a></li>
+                     <li><a href='../../user/html/user.html'><span>사용자 관리</span></a></li>
                   </ul>
                </li>
 
@@ -45,16 +45,16 @@
                   <ul>
                      <li class='sub-menu'><a href='#' class="toggleBtn"><span>농촌 체험 프로그램</span></a>
                         <ul>
-                           <li><a href='#'><span>프로그램 지원자 관리</span></a></li>
-                           <li><a href='#'><span>체험 프로그램 글 신청 관리</span></a></li>
-                           <li><a href='#'><span>체험 프로그램 글 관리</span></a></li>
+                           <li><a href='../../experience/html/experience_participant.html'><span>프로그램 지원자 관리</span></a></li>
+                           <li><a href='../../experience/html/experience_addList.html'><span>체험 프로그램 글 신청 관리</span></a></li>
+                           <li><a href='../../experience/html/experience_list.html'><span>체험 프로그램 글 관리</span></a></li>
                         </ul>
                      </li>
                      <li class='sub-menu'><a href='#' class="toggleBtn"><span>농촌 아르바이트</span></a>
                         <ul>
-                           <li><a href='#'><span>아르바이트 지원자 관리</span></a></li>
-                           <li><a href='#'><span>아르바이트 공고 글 신청 관리</span></a></li>
-                           <li><a href='#'><span>아르바이트 공고 글 관리</span></a></li>
+                           <li><a href='../../part/html/part_participant.html'><span>아르바이트 지원자 관리</span></a></li>
+                           <li><a href='../../part/html/part_addList.html'><span>아르바이트 공고 글 신청 관리</span></a></li>
+                           <li><a href='../../part/html/part_list.html'><span>아르바이트 공고 글 관리</span></a></li>
                         </ul>
                      </li>
                   </ul>
@@ -64,12 +64,12 @@
                   <ul>
                      <li class='sub-menu'><a href='#' class="toggleBtn"><span>공지</span></a>
                         <ul>
-                           <li><a href='#'><span>공지 관리</span></a></li>
-                           <li class='last-menu'><a href='#'><span>공지 글 작성</span></a></li>
+                           <li><a href='../../notice/html/notice_list.html'><span>공지 관리</span></a></li>
+                           <li class='last-menu'><a href='../../notice/html/notice_write.html'><span>공지 글 작성</span></a></li>
                         </ul>
                      </li>
-                     <li><a href='#'><span>멘토 홍보</span></a></li>
-                     <li><a href='#'><span>소통공간</span></a></li>
+                     <li><a href='../../board/html/mentor.html'><span>멘토 홍보</span></a></li>
+                     <li><a href='../../board/html/board.html'><span>소통공간</span></a></li>
                   </ul>
                </li>
 
