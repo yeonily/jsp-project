@@ -19,7 +19,7 @@
 	<!-- 상단 이미지 위 요소들 -->
 	<div id="lgr_top" >
 		<div id="lgr_main_logo">
-			<a href="/young/index.do"><img id="lgr_domain_logo" src="logo_no.png" /></a>
+			<a href="/young/index.do"><img id="lgr_domain_logo" src="images/logo_black.png" /></a>
 		</div>
 		<div id="lgr_top_textwrap">
 			<img id="lgr_background_img" src="https://www.rda.go.kr/young/images/site/main/ma_img_background.png" />
@@ -159,8 +159,8 @@
             <div id="lgr_top_login" onclick="location.href='/young/board/board04.do'">
                 <div class="lgr_top_menubtn">
                     <div class="lgr_top_imgwrap">
-                        <img src="login.png" >
-                        <img src="login_over.png" >
+                        <img src="images/login.png" >
+                        <img src="images/login_over.png" >
                     </div>
                     <div class="lgr_top_btntext">
                         <span>로그인</span>
@@ -179,8 +179,8 @@
             <div id="lgr_top_join" onclick="location.href='/young/board/board04.do'">
                 <div class="lgr_top_menubtn">
                     <div class="lgr_top_imgwrap">
-                        <img src="user.png">
-                        <img src="user_over.png" >
+                        <img src="images/user.png">
+                        <img src="images/user_over.png" >
                     </div>
                     <div class="lgr_top_btntext">
                         <span>회원가입</span>
@@ -212,83 +212,6 @@
 		<input type="hidden" name="search_category" value="">
 		<input type="hidden" name="search_area1" value="">
 		<input type="hidden" name="search_area2" value="">
-		<div id="lgr_categorybox">
-			<div id="lgr_tag_group">
-				<ul id="lgr_tag_list">
-					<li data-id="ALL" class="active">
-						<label for="cate">#전체</label>
-						<input type="checkbox" id="cate" name="cate" class="category" value="" />
-					</li>
-					<li data-id="금융">
-						<label for="cate_1">#자금</label>
-						<input type="checkbox" id="cate_1" name="cate" class="category" value="자금">
-					</li>
-					<li data-id="교육">
-						<label for="cate_2">#교육</label>
-						<input type="checkbox" id="cate_2" name="cate" class="category" value="교육">
-					</li>
-					<li data-id="창업">
-						<label for="cate_3">#창업</label>
-						<input type="checkbox" id="cate_3" name="cate" class="category" value="창업">
-					</li>
-					<li data-id="주거">
-						<label for="cate_4">#주거</label>
-						<input type="checkbox" id="cate_4" name="cate" class="category" value="주거">
-					</li>
-					<li data-id="일자리">
-						<label for="cate_5">#일자리</label>
-						<input type="checkbox" id="cate_5" name="cate" class="category" value="일자리">
-					</li>
-					<li data-id="농지">
-						<label for="cate_6">#농지</label>
-						<input type="checkbox" id="cate_6" name="cate" class="category" value="농지">
-					</li>
-					<li data-id="네트워크" id="lgr_special">
-						<label for="cate_7">#네트워크</label>
-						<input type="checkbox" id="cate_7" name="cate" class="category" value="네트워크">
-					</li>
-					<li data-id="컨설팅">
-						<label for="cate_8">#컨설팅</label>
-						<input type="checkbox" id="cate_8" name="cate" class="category" value="컨설팅">
-					</li>
-					<li data-id="판로">
-						<label for="cate_9">#판로</label>
-						<input type="checkbox" id="cate_9" name="cate" class="category" value="판로">
-					</li>
-				</ul>
-			</div>
-			<div id="lgr_select_group">
-			<select id="lgr_select1" style="background-image:url(/young/images/site/main/common_ico_down_w.png)">
-                <option value="11">서울</option>
-                <option value="21">부산</option>
-                <option value="22">대구</option>
-                <option value="23">인천</option>
-                <option value="24">광주</option>
-                <option value="25">대전</option>
-                <option value="26">울산</option>
-                <option value="29">세종</option>
-                <option value="31">경기</option>
-                <option value="32">강원</option>
-                <option value="33">충북</option>
-                <option value="34">충남</option>
-                <option value="35">전북</option>
-                <option value="36">전남</option>
-                <option value="37">경북</option>
-                <option value="38">경남</option>
-                <option value="39">제주</option>
-                <option value="00" selected>전국</option>
-
-			</select> 
-			<select id="lgr_select2" style="background-image:url(/young/images/site/main/common_ico_down_w.png)">
-                <option value="">전체</option>
-			</select>
-			
-			<div id="lgr_searchbtn">
-				<a href="javascript:fn_search();">조회</a>
-			</div>
-
-			</div>
-		</div>
 		</form>
 	<!-- 최근 게시글 -->
 	
@@ -729,7 +652,7 @@
 				
 				<div id="lgr_middlebtn6" onclick="location.href='/young/board/board19.do'">
 					<div class="lgr_middlebtn_imgwrap">
-						<img src="spary.png">
+						<img src="images/spary.png">
 					</div>
 					<div class="lgr_middelbtn_textwrap">
 						<span>농약 정보</span>
@@ -744,8 +667,6 @@
 <script type="text/javascript" src="/young/js/dist/local.js"></script>
 <script type="text/javascript">
 
-	/* setSearchSidoOptions("lgr_select1", "lgr_select2"); */
-	
 	$(document).ready(function(){
 		$("#lgr_select1").val("00").prop("selected", true);
 	});
@@ -754,132 +675,6 @@
 		$('html, body').animate({scrollTop: '0'}, 800);
 		return false;
 	});
-	
-	
-	//지원사업 검색
-	$("input.category").click(function(){
-		if($(this).prop("checked") == true) {
-			$("#lgr_tag_list li").removeClass("active");
-			if($(this).val() == "") {
-				$("input.category").prop("checked", false);
-				$(this).prop("checked", true);
-			} else {
-				$("input.category[value='']").prop("checked", false);
-			}
-			$("input.category").each(function(i, item){
-				if($(item).prop("checked") == true) {
-					$(item).closest("li").addClass("active");
-				}
-			})
-		} else {
-			$(this).closest("li").removeClass("active");
-		}
-	})
-	
-		//검색
-	function fn_search(){			
-		document.searchasForm.search_area1.value = $("#lgr_select1").val();
-		document.searchasForm.search_area2.value = $("#lgr_select2").val();
-		
-		//유형
-		var category = "";
-		var chkCnt = 0;
-		var rowArr = document.getElementsByName("cate");
-		for (var i = 0; i < rowArr.length; i++) {
-			if (rowArr[i].type == "checkbox" && rowArr[i].checked){
-				if(chkCnt != 0){
-					category += ",";
-				}
-				category += rowArr[i].value;
-				chkCnt++;
-			}
-		}
-		document.searchasForm.search_category.value = category;
-		
-		document.searchasForm.action = "/young/custom.do"
-			document.searchasForm.submit();
-		
-		//fn_movePage(1);
-		
-	}
-	
-	/*$("#lgr_tag_list > li").click(function(){
-		$("#lgr_tag_list > li").removeClass("active");
-		$("#lgr_tag_list > li").css("background-color", "transparent");
-		$("#lgr_tag_list > li").css("color", "#003668");
-		$(this).addClass("active");
-		$(this).css("background-color", "#003668");
-		$(this).css("color", "#ffffff");
-		var category = $(this).attr("data-id");
-		var area1 = $("#lgr_select1").val();
-		var area2 = $("#lgr_select2").val();
-		//fn_searchCustomInfoList(area1, area2, category);
-	});
-	
-	 $("#lgr_searchbtn").click(function(){
-		var category = $("#lgr_tag_list > li.active").attr("data-id");
-		var area1 = $("#lgr_select1").val();
-		var area2 = $("#lgr_select2").val();
-		fn_searchCustomInfoList(area1, area2, category);
-	})
-	
-	function fn_searchCustomInfoList(area1, area2, category){
-		$("#lgr_content_wrap").html('<div style="text-align:center; height:350px; line-height:350px;">조회된 지원사업이 없습니다.</div>');
-		gf_ajax({
-			url : "/young/custom/getMainList.json",
-			type : "POST",
-			data : {
-				area1 : area1,
-				area2 : area2,
-				category : category,
-			},
-		}).then(function(response){
-			var html = "";
-			if(response != null && response.length > 0) {
-				$.each(response, function(i, item){
-					html += '<div class="lgr_content" onclick="location.href=\'/custom/'+item.typeDv+'/view.do?sId='+item.seq+'\'">';
-					html += '<div class="lgr_categorywrap">';
-					html += '<div class="lgr_placeimg"><img src="/young/images/site/main/ma_ico_place.png"></div>';
-					html += '<div class="lgr_place">';
-					html += '<div class="lgr_text-underline1"></div>';
-					html += '<span>' + gf_nvl(item.area1Nm, "")
-					if(!gf_isNull(item.area2Nm)){
-						html += '<span class="adv">'+item.area2Nm+'</span>';
-					}
-					html += '</span>';
-					html += '</div>';
-					html += '<div class="lgr_typeimg"><img src="/young/images/site/main/sub04_ico_type.png"></div>';
-					html += '<div class="lgr_type">'+gf_nvl(item.category, "")+'</div>';
-					html += '</div>';
-					html += '<div class="lgr_subject"><span>'+item.title+'</span></div>';
-					html += '<div class="lgr_datebadge"><span>기간</span></div>';
-					html += '<div class="lgr_date">~&nbsp;'+gf_nvl(item.applEdDt, "")+'</div>';
-					html += '<div class="lgr_more">';
-					html += '<div class="lgr_moretext">더보기</div>';
-					html += '<div class="lgr_moreimgwrap">';
-					html += '<img class="lgr_moreimg" src="/young/images/site/main/ma_ico_more_black.png">'; 
-					html += '<img class="lgr_moreimg2" src="/young/images/site/main/ma_ico_more.png">';
-					html += '</div>';
-					html += '</div>';
-					html += '</div>';
-				})
-			} else {
-				html = '<div style="text-align:center; height:350px; line-height:350px;">조회된 지원사업이 없습니다.</div>';
-			}
-			$("#lgr_content_wrap").html(html);
-		});
-	} 
-	
-	$(".search_bt").click(function(){
-		var category = $("#lgr_tag_list > li.active").attr("data-id");
-		var area1 = $("#lgr_select1").val();
-		var area2 = $("#lgr_select2").val();
-	
-	}) */
-
-	</script>
-	
-	<script>
 	
 	/* 슬라이드 메뉴 타이틀 클릭시 슬라이드 */
 	$(document).ready(function(){
@@ -934,7 +729,6 @@
 	});
 	
 	</script>
-	
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script type="text/javascript">
 	//슬라이드
@@ -949,35 +743,6 @@
 	
 </script>
 
-	
-	<!-- script>
-		const menu = document.getElementById('lgr_side_bar')
-		
-		function slideDown(){
-			menu.style.right = "-80px"
-		}
-		
-		function slideUp(){
-			menu.style.right = "0";
-		}
-		
-		function handleMouseMove(event) {
-			let clientX = event.clientX;
-			
-			if(clientX >= 0 && clientX <= 10){
-				slideUp();
-			}
-			else if(clidneX > 80) {
-				slideDown();
-			}
-		}
-		
-		function init() {
-			document.addEventListener("mousemove", handleMouseMove);
-		}
-		
-		init();
-	</script -->
 </section>
 </body>
 </html>
