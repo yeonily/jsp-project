@@ -43,7 +43,6 @@ body{
 .contentfullwrap {
     position: relative;
     width: 100%;
-    border-top: 1px solid #d9d9d9;
 }
 
 .contentwrap {
@@ -109,6 +108,11 @@ ul.datatext_r>li+li:before {
     color: rgb(0, 0, 0, .5);
 }
 
+
+.base_boardview table tbody tr td {
+    padding: 24px 20px;
+}
+
 .base_boardview table tbody tr td.textarea {
     word-break: break-all;
     white-space: pre-line;
@@ -139,6 +143,7 @@ ul.datatext_r>li+li:before {
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
+    color: blue;
 }
 
 .mt25 {
