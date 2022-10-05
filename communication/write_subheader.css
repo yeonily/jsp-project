@@ -40,7 +40,7 @@ body {
     margin: 0;
 }
 
-/* header */
+/* subheader */
 .sub_title{
     width: 100%;
     background-image: url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=mFFphUfLAB1Ng3Mg1ZV37SJqwwEzgE5GIwhDyL%2F6Nz9VBYOJAsth1MTks%2BecMj4rSFgVYwnGGTl6kLgmqqoWCw%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
@@ -54,7 +54,7 @@ body {
     position: relative;
     height: 17.353rem;
 }
-.container {
+.sub_title_container {
     height: 100%;
     max-width: 82.353rem;
     margin: auto;
@@ -131,6 +131,11 @@ li.nowMenu{
     bottom: 2rem;
     vertical-align: top;
 }
+
+
+
+
+
 
 
 
