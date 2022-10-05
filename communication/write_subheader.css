@@ -54,7 +54,7 @@ body {
     position: relative;
     height: 17.353rem;
 }
-.sub_title>.container {
+.sub_title_container {
     height: 100%;
     max-width: 82.353rem;
     margin: auto;
