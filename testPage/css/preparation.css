@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+/* ↓ 영어 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.checklist{
+    margin-top: 30px !important;
+}
+
+div.main {
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #ababab;
+    border-left: 1px solid #e6e6e6;
+
+    background: url('https://www.returnfarm.com:444/css/wvtex/img/sub/advi5_icon02.png') 50% 65px no-repeat;
+    padding: 260px 0 111px;
+    text-align: center;
+}
+
+div.main ul li.test-title {
+    font-size: 40px;
+    color: #323232;
+    font-weight: 600;
+    padding-bottom: 16px;
+    letter-spacing: -0.01em;
+}
+
+div.main ul li.test-title>span{ color: #72a83b; }
+
+div.main ul li.test-text {
+    font-size: 20px;
+    color: #616161;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.08em;
+    margin-bottom: 29px;
+}
+
+ul li a.test-start {
+    background: url('https://www.returnfarm.com:444/css/wvtex/img/sub/advi5_btnicon_01.png') 23px 8px no-repeat #ff7800;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding: 9px 33px 12px 63px;
+}
