@@ -1,0 +1,101 @@
+div#contents-top div.c-left{
+    height: 235px;
+    max-width: 400px;
+}
+
+/* 차트 */
+div#lineChart {
+    width: 90%;
+    height: 88%;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+th.num { width: 7%; }
+th.title { width: 20%; max-width: 300px;}
+th.id { width: 14%; }
+th.work-date { width: 11%; }
+th.work-time { width: 10%; }
+th.address { width: 8%; }
+th.manpower { width: 7%; }
+th.date { width: 11%; }
+th.delete, th.wait { width: 6%; }
+
+td.delete, td.wait { padding: 0 0.3vw; }
+td input[type="button"] {
+    width: 100%;
+    padding: 3px 1px;
+    border: 1px solid rgb(184, 184, 184);
+    box-shadow: 0.1px 0.1px 8px -5px #000000;  
+    
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.9vw;
+    color: #353535;
+    cursor: pointer;
+    word-break: keep-all;
+}
+
+td.delete input[type="button"] { background: #f5c7bd; }
+
+td.wait input[type="button"]:hover { background: #e1e2e4;}
+td.delete input[type="button"]:hover { background: #eeb6aa; }
+
+
+@media screen and (max-width: 1030px) and (min-width: 990px) {
+    table th {
+        font-size: 14px;
+        line-height: 11px;
+    }
+    table td { font-size: 13px; }
+    
+    div.contents-bottom span.caption {  font-size: 12px; }
+
+    div.contents-bottom input[type="button"] {
+        top: 15px;
+        right: 3vw;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    div#contents-top {
+        flex-wrap: wrap;
+    }
+
+    
+div#contents-top div.c-left {
+        margin-bottom: 12px;
+    }
+
+    div.content {
+        width: 70vw;
+        height: 27vw;
+        min-height: 250px;
+    }
+
+    div.content div.title { margin-bottom: 6%; }
+
+    div#lineChart { padding-top: 5%; }
+
+    div.contents-bottom { margin-top: 10px; }
+
+    div.contents-bottom span.caption {  font-size: 12px; }
+
+    div.contents-bottom input[type="button"] {
+        top: 15px;
+        right: 3vw;
+        font-size: 13px;
+    }
+
+    table { border-spacing: 0 3px; }
+    
+    table th {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    table td {
+        font-size: 12px;
+    }
+}

@@ -86,7 +86,7 @@
             <!-- 컨텐츠 상단 통계 -->
             <div id="contents-top">
                 <div class="content c-left">
-                    <div class="title">Today</div>
+                    <div class="title week">최근 일주일</div>
                     <div id="counts-group">
                         <div class="counts">
                             <!-- 오늘 추가 되는 프로그램 수 -->
@@ -97,7 +97,7 @@
                 </div>
                 <!-- 차트 -->
                 <div class="content">
-                    <div id="lineChart"></div>
+                    <div id="stickChart"></div>
                 </div>
             </div>
 
@@ -111,7 +111,7 @@
                             <select name="searchSelect" class="val">
                                 <option value="programName">프로그램명</option>
                                 <option value="id">지원자</option>
-                                <option value="address">주소</option>
+                                <option value="address">위치</option>
                             </select>
                         </span>
                         <span class="s-f-input">
@@ -188,6 +188,7 @@
 
 </body>
 <!-- 차트 -->
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script src="../js/chartAPI.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="../js/chartAPI_stick.js"></script>
 <html>
