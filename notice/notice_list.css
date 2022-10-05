@@ -19,17 +19,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: inherit;
 }
 
+body{
+    margin: 0;
+}
 
-/* div#top-info {
-    margin-bottom: 13px;
-    padding: 20px 0 15px 187px;
-    border-bottom: 2px solid #565656;
-} */
 
 .contentfullwrap {
     position: relative;
     width: 100%;
-    border-top: 1px solid #d9d9d9;
 }
 
 .contentwrap {
