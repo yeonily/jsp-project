@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프로그램 신청 상세페이지1</title>
-    <link rel="stylesheet" href="applyDetailPage_1.css">
+    <title>프로그램 신청 상세페이지2</title>
+    <link rel="stylesheet" href="albaDetailPage_2.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
 </head>
@@ -176,6 +176,7 @@
         </div>
         <div id="lgr_topbtn"><a href="#"><img src="https://www.rda.go.kr/young/images/site/main/common_btn_top.png"></a></div>
     </header>
+    <!-- 바디 -->
     <div class="wrap">
         <div class="sub_title">
             <div class="container">
@@ -183,11 +184,11 @@
                     <div class="title_left_box">
                         <div class="snb_wrap">
                             <nav class="snb">
-                                <div class="top" style="display: inline-block">프로그램 신청</div>
+                                <div class="top" style="display: inline-block">알바 신청</div>
                                 <div class="lgr_snb" style="display: inline-block; margin-left: 20px;">
                                     <ul class="lgr_ul">
-                                        <li class="nowMenu"><span style="font-weight: 600;">농촌 체험 프로그램</span></li>
-                                        <li class="secondMenu"><span>농촌 아르바이트</span></li>
+                                        <li class="nowMenu"><span>농촌 체험 프로그램</span></li>
+                                        <li class="secondMenu"><span class="checkText">농촌 아르바이트</span></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -202,7 +203,7 @@
         <div class="main_wrap">
             <div class="main_guide">
                 <p class="tit">
-                    프로그램 신청
+                    알바 신청
                 </p>
                 <p class="desc">
                     <strong>전문가와 함께 프로그램 체험 및 알바를 해보세요!</strong>
@@ -213,17 +214,17 @@
                 </p>
             </div>
             <div class="conwrap">
-                <p class="contit">프로그램 신청 절차</p>
+                <p class="contit">아르바이트 신청 절차</p>
                 <div class="process">
                     <ul class="clearfix">
                         <li>
                             <p class="stepnum" id="firstStep">Step<br><strong>1</strong></p>
                             <p class="conarea">
-                                <strong>프로그램 상세 내용 안내</strong>
+                                <strong>알바 상세 내용 안내</strong>
                                 <br>
                                 상세 내역 확인 후
                                 <br>
-                                프로그램 신청 클릭
+                                알바 신청 클릭
                                 <br>
                                 (지원신청서 작성으로 이동)
                             </p>
@@ -257,59 +258,43 @@
             </div>
         </div>
         <div class="sub_guide">
-            <form action="">
-                <h3 class="view_tit">프로그램 상세 페이지</h3>
-                <div class="view_main">
-                    <img src="https://www.kofpi.or.kr/repository/thumimg/temp4970371408956360760004.jpg" alt="">
-                    <div class="detail_info">
-                        <div class="info_apply">
-                            <a href="" class="apply_on">
-                                <span>프로그램신청</span>
-                            </a>
-                        </div>
-                        <table class="info_table">
-                            <colgroup>
-                                <col style="width: 145px;">
-                                <col>
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td><span class="list_icon">지역</span></td>
-                                    <td><span>충남 영동</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="list_icon">교육 기간</span></td>
-                                    <td><span>2022-10-09 ~ 2022-10-09</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="list_icon">교육 시간</span></td>
-                                    <td><span>13:00~17:00</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="list_icon">수강료</span></td>
-                                    <td><span>무료</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="list_icon">신청 기간</span></td>
-                                    <td><span>2022-09-29 09:00 ~ 2022-10-09 18:00</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="list_icon">모집 인원 수</span></td>
-                                    <td><span>20명</span></td>
-                                </tr>
-                                <tr>
-                                    <td><span class="list_icon">문의 전화</span></td>
-                                    <td><span>1600-1234</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            <form id="apply_form">
+                <h3 class="view_tit">알바 신청내역서</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><label>이름 <p class="red_star">*</p></label></th>
+                            <td><input type="text" id="userName" placeholder="이름을 입력해주세요"></td>
+                            <th><label>성별</label></th>
+                            <td><input type="text" id="userName" placeholder="남/여"></td>
+                        </tr>
+                        <tr>
+                            <th><label>생년월일 <p class="red_star">*</p></label></th>
+                            <td><input type="date" id="userName" placeholder="2000-01-01"></td>
+                            <th><label>핸드폰 번호 <p class="red_star">*</p></label></th>
+                            <td><input type="tel" id="userName" placeholder="010-1234-5678"></td>
+                        </tr>
+                        <tr>
+                            <th><label>주소 <p class="red_star">*</p></label></th>
+                            <td><input type="text" id="userName"></td>
+                            <th><label>이메일 주소 <p class="red_star">*</p></label></th>
+                            <td><input type="email" id="userName"></td>
+                        </tr>
+                        <tr>
+                            <th>프로그램 신청 동기</th>
+                            <td colspan="3"><input type="text" id="userName"style="height: 100px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btns">
+                    <button id="btn_cancel" class="checkText">취소</button>
+                    <button id="btn_apply" class="checkText">등록</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <!--footer -->
+    <!-- 푸터 -->
     <footer class="footer">
         <div class="bottom_link">
             <div class="container">
@@ -342,6 +327,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script>

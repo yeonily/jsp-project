@@ -9,7 +9,7 @@ body {
 }
 .sub_title{
     width: 100vw;
-    background-image: url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=l%2BFlhnD03GsJ%2Fchs5vcnWANjaPVA8jceO3zpgcD7G8yWklFi5FyBa5sbhA28X6QWCVj7vfrcTg1bL8qWZ5zq2A%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
+    background-image: url(https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=mFFphUfLAB1Ng3Mg1ZV37SJqwwEzgE5GIwhDyL%2F6Nz9VBYOJAsth1MTks%2BecMj4rSFgVYwnGGTl6kLgmqqoWCw%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D);
     padding: 4.706rem 0 0;
     z-index: 2;
     box-sizing: border-box;
@@ -233,7 +233,7 @@ p.desc strong{
 }
 
 
-#secondStep{
+#lastStep{
     background-size: cover;
     height: 101px;
     width: 112px;
@@ -241,65 +241,30 @@ p.desc strong{
     left: 132px;
     font-size: 27px;
 }
-#secondStep strong{
+#lastStep strong{
     font-size: 44px;
 }
-#apply_form{
-    width: 82.353rem;
+
+.apply_finish{
     margin: 0 auto;
+    width: 82.353rem;
+    text-align: center;
+}
+.h2{
+    font-size: 4rem;
+    font: ;
+    font-weight: bold;
+    line-height: 76px;
+    margin-top: 30px;
+}
+.txt{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold ;
 }
 
-#apply_form table{
-    margin: 0 auto;
-    border-top: 2px solid #7fb069;
-    border-bottom: 1px solid #ccc;
-    background: #fff;
-    width: 62.353rem;
-}
-table th{
-    background-color: #f8fbf7;
-    text-align: center;
-}
-table td{
-    border-left: 1px solid #ddd;
-}
-#userName{
-    height: 40px;
-    line-height: 40px;
-    padding: 0 10px;
-    border: 1px solid #e8e8e8;
-    box-sizing: border-box;
-    width: 100%;
-}
-.red_star{
-    color: red;
-    display: inline-block;
-}
-.btns{
-    padding-top: 60px;  
-    width: 62.353rem;
-    margin: auto;
-    text-align: center;
-}
-#btn_cancel{
-    width: 150px;
-    height: 46px;
-    background-color: #afafaf;
-    color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    border: none;
-    font-size: 16px;
-    font: bold;
-}
-#btn_apply{
-    width: 150px;
-    height: 46px;
-    background-color: #003668;
-    color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    border: none;
-    font-size: 16px;
-    font: bold;
+.checkText{
+    color: #333;
+    font-weight: 600;
 }
