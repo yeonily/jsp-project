@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myProfile.css"> <!-- (이후) 내 정보 간단하게 보여주는 폼 -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>마이페이지</title>
+</head>
+<body>
+    <!-- 헤더 -->
+    <!-- 마우스 갖다대면 보이는 헤더 -->
+    <div class="lgr_back">
+        <div class="lgr_logo_head">
+            <div class="lgr_backg_logo">
+                <a href="/young/index.do"><img src="./images/logo_no.png" alt="메인 로고"
+                        style="vertical-align: middle; display: inline-block;"></a>
+            </div>
+        </div>
+        <div class="lgr_background_f9f9f9">
+            <div class="lgr_background_003668">
+                <img src="https://www.rda.go.kr/young/images/site/main/menu_bg.png" alt="메인 로고">
+            </div>
+            <div class="lgr_normal_link">
+                <ul>
+                    <li class="lgr_gnbhead" id="k1"><a href="/young/custom.do">지원정책</a></li>
+                    <li class="j1"><a href="/young/custom.do">청년농 지원정책</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead"  id="k2"><a href="/young/content/content01.do">농업정보</a></li>
+                    <li class="j2"><a href="/young/content/content01.do">작물정보</a></li>
+                    <li class="j2"><a href="/young/content/content02.do">계절별 작물 추천</a></li>
+                    <li class="j2"><a href="/young/content/content03.do">지역별 특산물 정보</a></li>
+                    <li class="j2"><a href="/young/content/content02040101.do">작물 시세 확인</a></li>
+                    <li class="j2"><a href="/young/content/content02040101.do">병해충 정보</a></li>
+                    <li class="j2"><a href="/young/content/content02040101.do">농약 정보</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead" id="k3" ><a href="/young/board/board15.do" >프로그램</a></li>
+                    <li class="j3"><a href="/young/board/board15.do">농촌 체험 프로그램 신청</a></li>
+                    <li class="j3"><a href="/young/board/board17.do">농촌 아르바이트 신청</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead"  id="k4"><a href="/young/board/board21.do" >커뮤니티</a></li>
+                    <li class="j4"><a href="/young/board/board21.do">공지사항</a></li>
+                    <li class="j4"><a href="/young/board/board02.do">멘토 홍보 게시판</a></li>
+                    <li class="j4"><a href="/young/board/board03.do">소통공간</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead"  id="k5"><a href="/young/board/board04.do" >지역정보</a></li>
+                    <li class="j5"><a href="/young/board/board04.do">마을회관 정보</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead"  id="k6"><a href="/young/board/board15.do" >귀농 테스트</a></li>
+                    <li class="j6"><a href="/young/board/board15.do">귀농 준비도 테스트</a></li>
+                    <li class="j6"><a href="/young/board/board17.do">귀농 단계별 체크리스트</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 헤더 -->
+    <header class="header">
+        <div class="logo_wrap">
+            <div class="container">
+                <div class="logo">
+                    <a href="/young/index.do" title="홈"><img src="./images/logo_no.png"
+                            alt="똑똑! 청년농부"></a>
+                </div>
+                <div id="gnb_wrap" class="gnb_wrap">
+                    <nav id="gnb" class="gnb">
+                        <ul data-level="1">
+                            <li><a href="/young/custom.do">
+                                    <span>지원정책</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/custom.do">
+                                            <span>청년농 지원정책</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/content/content01.do">
+                                    <span>농업정보</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/content/content01.do">
+                                            <span>작물정보</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content02.do">
+                                            <span>계절별 작물 추천</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content03.do">
+                                            <span>지역별 특산물 정보</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content02040101.do">
+                                            <span>작물 시세 확인</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content02040101.do">
+                                            <span>병해충 정보</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content02040101.do">
+                                            <span>농약 정보</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/board/board15.do" class="active">
+                                    <span>프로그램</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/board/board15.do" class="active">
+                                            <span>농촌 체험 프로그램 신청</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/board/board17.do" class="active">
+                                            <span>농촌 아르바이트 신청</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/board/board21.do" class="active">
+                                <span>커뮤니티</span>
+                            </a>
+                            <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/board/board21.do" class="active">
+                                        <span>공지사항</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/board/board02.do" class="active">
+                                            <span>멘토 홍보 게시판</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/board/board03.do" class="active">
+                                            <span>소통공간</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/board/board04.do" class="active">
+                                    <span>지역정보</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/board/board04.do" class="active">
+                                        <span>마을회관 정보</span>
+                                    </a>
+                                </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/board/board15.do" class="active">
+                                    <span>귀농 테스트</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/board/board15.do" class="active">
+                                            <span>귀농 준비도 테스트</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/board/board17.do" class="active">
+                                            <span>귀농 단계별 체크리스트</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                  
+                </div>
+            </div>
+            <div id="lgr_login" onclick="location.href='/young/login.do'">로그인</div>
+            <div id="lgr_join" onclick="location.href='/young/join.do'">회원가입</div>
+        </div>
+        <div id="lgr_topbtn"><a href="#"><img src="https://www.rda.go.kr/young/images/site/main/common_btn_top.png"></a></div>
+    </header>
+
+
+
+    <div class="wrap">
+        <!-- 네비게이션바 아래 title -->
+        <div class="sub_title">
+            <div class="container">
+                <div class="inner">
+                    <!-- "마이페이지" 폰트 -->
+                    <div class="left_font">
+                        <div class="mypage">
+                            <nav><div class="top">마이페이지</div></nav>
+                        </div>
+                    </div>
+    
+                    <!-- 일러스트 이미지 -->
+                    <div class="title_right_box">
+                        <img src="https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=ybeUrSjBOXZnYzXPeGpV8EB4nLayDSOijEyayiHqRzP3wf2uZqRIcoNdks4zvn4GD3g57TCf1WZ%2BzJ6F3647Hw%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 회원정보 폼 -->
+        <div class="sub_content">
+            <div class="container">
+                <div class="inner">
+                    <form>    
+                        <!-- 회원의 정보를 보여줄 Form -->
+                        <div class="user_info">
+                            <div class="user_box box01">
+                                <div class="user_pic">
+                                    <!-- 사용자 아이콘 -->
+                                    <img id="userFileImg" src="https://www.rda.go.kr/young/images/site/login/my_ico_01.png">
+                                        </div>
+                                <div class="user_i">
+                                    <p>안녕하세요,<span>회원 이름</span>님</p> <!-- (이후) 로그인한 회원의 이름으로 출력 필요 -->
+                                    <ul>
+                                        <li><a href="#">로그아웃</a></li>
+                                        <li><a href="../updatePage/updateInfo.html">정보수정</a></li>
+                                        <li><a href="../deletePage/delete.html">회원탈퇴</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="user_box box02">
+                                <ul>
+                                    <li>
+                                        <p class="join">멘토링</p> <!-- (이후) 로그인한 회원의 가입형태로 출력 필요 -->
+                                        <p>
+                                            <span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="local">지역</p> <!-- (이후) 로그인한 회원이 입력한 지역 출력 필요 -->
+                                        <p>
+                                            <span></span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="crop">농작물</p> <!-- (이후) 가입할 때 선택한 농작물 출력 필요 -->
+                                        <p>
+                                            <span></span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 메뉴에 따른 더보기(신청 프로그램 내역, 내가 작성한 글) -->
+                        <div class="supp_info">
+                            <div class="myProgramMore">
+                                <h4>프로그램 신청 내역</h4>
+                                <a href="../myProgramApply/programApply.html" class="mre">더보기</a>
+                                <div class="myProgram">
+                                    <ul class="myProgramList"> <!-- (이후) 신청 프로그램 여부에 따라 리스트 출력 필요 -->
+                                        <div>
+                                            <a href="#"><li>
+                                                <p>[충청남도 천안]천안에서 함께 하는 주말농장 체험 프로그램(09.12~09.18 모집중!)</p>
+                                                <span>2022-09-12</span>
+                                            </li></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><li>
+                                                <p>[세종특별시]세종회관에서 다함께 즐길 수 있는 캠페인!</p>
+                                                <span>2022-09-12</span>
+                                            </li></a>
+                                        </div>
+                                        <div>
+                                            <a href="#"><li>
+                                                <p>[세종특별시]세종회관에서 다함께 즐길 수 있는 캠페인!</p>
+                                                <span>2022-09-12</span>
+                                            </li></a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="myPostMore">
+                                <h4>게시판 활동 내역</h4>
+                                <a href="../myWriting/myWriting.html" class="mre">더보기</a>
+                                <div class="myPost">
+                                    <ul class="myPostList"> <!-- (이후) 신청 게시글 작성 여부에 따라 리스트 출력 필요 -->
+                                        <div>
+                                            작성하신 글을 찾을 수 없습니다.
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="bottom_link">
+            <div class="container">
+                <div class="logo">
+                    <img src="./images/logo_white.png" style="vertical-align: middle; width: 130%;"
+                        alt="똑똑! 청년농부">
+                </div>
+                <ul class="list_link">
+                    <!--<li>
+                <a href="https://www.rda.go.kr/board/board.do?mode=list&prgId=rep_hompicvnEntry" target="_blank">홈페이지 불편신고</a>
+            </li>-->
+                    <li>
+                        <a href="admin.jsp" target="_blank">관리자 페이지</a>
+                    </li>
+                    <li>
+                        <a href="https://www.rda.go.kr/psninfoprot.do" target="_blank">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="address">
+            <div class="container">
+                <ul>
+                    <li>코리아IT아카데미 강남점</li>
+                    <li>서울특별시 강남구 테헤란로 146 현역빌딩 3,4층</li>
+                    <li>대표전화 02-538-0021</li>
+                </ul>
+                <p class="copy">COPYRIGHT &copy;. ALL RIGHTS RESERVED</p>
+
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+    /* 헤더 적용 스크립트 */
+    var GNB;
+    $(function () {
+        GNB = $('#gnb');
+        GNB.find('>ul>li>a').on('mouseenter', function (e) {
+            e.preventDefault();
+            GNB.find('>ul>li>ul[data-level="2"]:visible').parent('li').removeClass('on');
+            $(this).next('ul[data-level="2"]:hidden').parent('li').addClass('on');
+        }).focus(function () {
+            $(this).mouseover();
+        }).end().mouseleave(function () {
+            GNB.find('>ul>li>ul[data-level="2"]').prev('a').parent().siblings().removeClass('on');
+        }).find('li').last().focusout(function () {
+            $(this).mouseleave();
+        });
+    });
+
+    $(document).ready(function () {
+        $('#gnb_wrap').mouseover(function () {
+            $('.lgr_back').css('display', 'block');
+        });
+
+        $('.lgr_back').mouseleave(function () {
+            $('.lgr_back').css('display', 'none');
+        })
+    })
+
+    $('.j1').mouseover(function () {
+        $('.j1').siblings('#k1').childred('a').css("color", "#7fb069");
+    });
+
+    $('.j1').mouseleave(function () {
+        $('.j1').siblings('#k1').childred('a').css("color", "#333333");
+    });
+
+    $('.j2').mouseover(function () {
+        $('#k2').css('color', '#7fb069');
+    });
+
+    $('.j2').mouseleave(function () {
+        $('#k2').css('color', '#333333');
+    });
+
+    $('.j3').mouseover(function () {
+        $('#k3').css('color', '#7fb069');
+    });
+
+    $('.j3').mouseleave(function () {
+        $('#k3').css('color', '#333333');
+    });
+
+    $('.j4').mouseover(function () {
+        $('#k4').css('color', '#7fb069');
+    });
+
+    $('.j4').mouseleave(function () {
+        $('#k4').css('color', '#333333');
+    });
+
+    $('.j5').mouseover(function () {
+        $('#k5').css('color', '#7fb069');
+    });
+
+    $('.j5').mouseleave(function () {
+        $('#k5').css('color', '#333333');
+    });
+</script>
+</html>
