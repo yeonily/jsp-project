@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 찾기</title>
+    <link rel="stylesheet" href="pw.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <div class="pop_wrap">
+        <div class="pop_inner">
+               <div class="pop_top">
+                <img src="https://www.rda.go.kr/young/images/popup/login_ico_lock.png">
+                <h2>비밀번호 찾기</h2>
+                <span>휴대폰번호와 이름을 입력해주세요.</span>
+               </div>
+        
+            <div class="pop_con">
+                   <div class="p_con_inner">
+                       <p>이름</p>
+                       <div class="p_inner_box">
+                            <input type="text" id="phone_num" placeholder="이름을 입력해주세요." class="name_text">
+                       </div><!--//p_inner_box-->
+                   </div><!--//p_con_inner-->
+                   
+                   <div class="p_con_inner phoneNum">
+                       <p>휴대폰 번호</p>
+                       <div class="p_inner_box">
+                        <input type="text" id="phone_num" placeholder="휴대폰 번호를 입력해주세요." class="phone_text">
+                        <button class="btn_phone">인증번호 요청</button>
+                       </div><!--//p_inner_box-->
+                   </div><!--//p_con_inner-->
+               
+
+                   
+                   <div class="p_con_inner bottom" hidden>
+                    <p>인증 번호</p>
+                       <div class="p_inner_box">
+                        <input type="text" id="phone_name" placeholder="인증 번호를 입력해주세요." class="name_text">
+                       </div><!--//p_inner_box-->
+                   </div><!--//p_con_inner-->
+               </div><!--//pop_con-->
+    
+               <div class="p_btn01">
+                   <a href="javascript:fn_findUserPwAction('phone');">확인</a>
+               </div>
+           </div><!--//pop_inner-->
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<script>
+    /* 다른번호 인증 클릭시 */
+    $(".btn_phone").click(function() {
+        $(".p_con_inner").css("display", "block");
+    });
+</script>
+
+</html>
