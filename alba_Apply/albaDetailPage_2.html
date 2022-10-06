@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그램 신청 상세페이지2</title>
+    <link rel="stylesheet" href="albaDetailPage_2.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!-- 마우스 갖다대면 보이는 헤더 -->
+    <div class="lgr_back">
+        <div class="lgr_logo_head">
+            <div class="lgr_backg_logo">
+                <a href="/young/index.do"><img src="logo_no.PNG" alt="메인 로고"
+                        style="vertical-align: middle; display: inline-block;"></a>
+            </div>
+        </div>
+        <div class="lgr_background_f9f9f9">
+            <div class="lgr_background_003668">
+                <img src="https://www.rda.go.kr/young/images/site/main/menu_bg.png" alt="메인 로고">
+            </div>
+            <div class="lgr_normal_link">
+                <ul>
+                    <li class="lgr_gnbhead" id="k1"><a href="/young/custom.do">지원정책</a></li>
+                    <li class="j1"><a href="/young/custom.do">청년농 지원정책</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead"  id="k2"><a href="/young/content/content01.do">농업정보</a></li>
+                    <li class="j2"><a href="/young/content/content01.do">작물정보</a></li>
+                    <li class="j2"><a href="/young/content/content02.do">계절별 작물 추천</a></li>
+                    <li class="j2"><a href="/young/content/content03.do">지역별 특산물 정보</a></li>
+                    <li class="j2"><a href="/young/content/content02040101.do">작물 시세 확인</a></li>
+                    <li class="j2"><a href="/young/content/content02040101.do">병해충 정보</a></li>
+                    <li class="j2"><a href="/young/content/content02040101.do">농약 정보</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead" id="k3" ><a href="/young/board/board15.do" >프로그램</a></li>
+                    <li class="j3"><a href="/young/board/board15.do">농촌 체험 프로그램 신청</a></li>
+                    <li class="j3"><a href="/young/board/board17.do">농촌 아르바이트 신청</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead"  id="k4"><a href="/young/board/board21.do" >커뮤니티</a></li>
+                    <li class="j4"><a href="/young/board/board21.do">공지사항</a></li>
+                    <li class="j4"><a href="/young/board/board02.do">멘토 홍보 게시판</a></li>
+                    <li class="j4"><a href="/young/board/board03.do">소통공간</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead"  id="k5"><a href="/young/board/board04.do" >지역정보</a></li>
+                    <li class="j5"><a href="/young/board/board04.do">마을회관 정보</a></li>
+                </ul>
+                <ul>
+                    <li class="lgr_gnbhead"  id="k6"><a href="/young/board/board15.do" >귀농 테스트</a></li>
+                    <li class="j6"><a href="/young/board/board15.do">귀농 준비도 테스트</a></li>
+                    <li class="j6"><a href="/young/board/board17.do">귀농 단계별 체크리스트</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 헤더 -->
+    <header class="header">
+        <div class="logo_wrap">
+            <div class="container">
+                <div class="logo">
+                    <a href="/young/index.do" title="홈"><img src="logo_no.PNG"
+                            alt="똑똑! 청년농부"></a>
+                </div>
+                <div id="gnb_wrap" class="gnb_wrap">
+                    <nav id="gnb" class="gnb">
+                        <ul data-level="1">
+                            <li><a href="/young/custom.do">
+                                    <span>지원정책</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/custom.do">
+                                            <span>청년농 지원정책</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/content/content01.do">
+                                    <span>농업정보</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/content/content01.do">
+                                            <span>작물정보</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content02.do">
+                                            <span>계절별 작물 추천</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content03.do">
+                                            <span>지역별 특산물 정보</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content02040101.do">
+                                            <span>작물 시세 확인</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content02040101.do">
+                                            <span>병해충 정보</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/content/content02040101.do">
+                                            <span>농약 정보</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/board/board15.do" class="active">
+                                    <span>프로그램</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/board/board15.do" class="active">
+                                            <span>농촌 체험 프로그램 신청</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/board/board17.do" class="active">
+                                            <span>농촌 아르바이트 신청</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/board/board21.do" class="active">
+                                <span>커뮤니티</span>
+                            </a>
+                            <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/board/board21.do" class="active">
+                                        <span>공지사항</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/board/board02.do" class="active">
+                                            <span>멘토 홍보 게시판</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/board/board03.do" class="active">
+                                            <span>소통공간</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/board/board04.do" class="active">
+                                    <span>지역정보</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/board/board04.do" class="active">
+                                        <span>마을회관 정보</span>
+                                    </a>
+                                </li>
+                                </ul>
+                            </li>
+                            <li><a href="/young/board/board15.do" class="active">
+                                    <span>귀농 테스트</span>
+                                </a>
+                                <ul style="text-align: right;" data-level="2">
+                                    <li><a href="/young/board/board15.do" class="active">
+                                            <span>귀농 준비도 테스트</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="/young/board/board17.do" class="active">
+                                            <span>귀농 단계별 체크리스트</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                  
+                </div>
+            </div>
+            <div id="lgr_login" onclick="location.href='/young/login.do'">로그인</div>
+            <div id="lgr_join" onclick="location.href='/young/join.do'">회원가입</div>
+        </div>
+        <div id="lgr_topbtn"><a href="#"><img src="https://www.rda.go.kr/young/images/site/main/common_btn_top.png"></a></div>
+    </header>
+    <!-- 바디 -->
+    <div class="wrap">
+        <div class="sub_title">
+            <div class="container">
+                <div class="inner">
+                    <div class="title_left_box">
+                        <div class="snb_wrap">
+                            <nav class="snb">
+                                <div class="top" style="display: inline-block">알바 신청</div>
+                                <div class="lgr_snb" style="display: inline-block; margin-left: 20px;">
+                                    <ul class="lgr_ul">
+                                        <li class="nowMenu"><span>농촌 체험 프로그램</span></li>
+                                        <li class="secondMenu"><span class="checkText">농촌 아르바이트</span></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="title_right_box">
+                        <img src="https://www.rda.go.kr/young/file/imageView.do?fpath=78mfPU1tH5tpGdf2EjZQb0R3AXuZGhjU7I8pBv4Rl9tqEaXhOUrKyqO8iZWgudng&fname=8nFVTgUIDUlBiYgKluFrhBdHVni9G2K67o64OtO8tD1DEXBRoHgiiIK%2BvPxFADkbugGa28PnSO6qNVxcSqtCKg%3D%3D&fmime=Lg45aghPCGTl0b%2FVATARWg%3D%3D">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_wrap">
+            <div class="main_guide">
+                <p class="tit">
+                    알바 신청
+                </p>
+                <p class="desc">
+                    <strong>전문가와 함께 프로그램 체험 및 알바를 해보세요!</strong>
+                    <br>
+                    너와농부싶어! 에서는 피곤한 일상생활으로부터 벗어나고 싶으신 도시민들의 안정적인 농촌 정착 및 체험을 돕기위해
+                    <br>
+                    전문가와 함께하는 체험 프로그램이 있으며, 소소한 일거리가 필요하신 분들께는 아르바이트도 준비되어 있습니다
+                </p>
+            </div>
+            <div class="conwrap">
+                <p class="contit">아르바이트 신청 절차</p>
+                <div class="process">
+                    <ul class="clearfix">
+                        <li>
+                            <p class="stepnum" id="firstStep">Step<br><strong>1</strong></p>
+                            <p class="conarea">
+                                <strong>알바 상세 내용 안내</strong>
+                                <br>
+                                상세 내역 확인 후
+                                <br>
+                                알바 신청 클릭
+                                <br>
+                                (지원신청서 작성으로 이동)
+                            </p>
+                        </li>
+                        <li>
+                            <p class="stepnum" id="secondStep">Step<br><strong>2</strong></p>
+                            <p class="conarea">
+                                <strong>지원신청서 작성</strong>
+                                <br>
+                                신청서 내역 작성 후
+                                <br>
+                                프로그램 지원 버튼 클릭
+                                <br>
+                                (관리자 승인 후 신청 완료)
+                            </p>
+                        </li>
+                        <li style="float: right;">
+                            <p class="stepnum" id="lastStep">Step<br><strong>3</strong></p>
+                            <p class="conarea">
+                                <strong>신청 완료</strong>
+                                <br>
+                                마이페이지에서 
+                                <br>
+                                관리자 승인 여부 확인
+                                <br>
+                                (부득이한 사정으로 취소될 수 있음)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sub_guide">
+            <form id="apply_form">
+                <h3 class="view_tit">알바 신청내역서</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><label>이름 <p class="red_star">*</p></label></th>
+                            <td><input type="text" id="userName" placeholder="이름을 입력해주세요"></td>
+                            <th><label>성별</label></th>
+                            <td><input type="text" id="userName" placeholder="남/여"></td>
+                        </tr>
+                        <tr>
+                            <th><label>생년월일 <p class="red_star">*</p></label></th>
+                            <td><input type="date" id="userName" placeholder="2000-01-01"></td>
+                            <th><label>핸드폰 번호 <p class="red_star">*</p></label></th>
+                            <td><input type="tel" id="userName" placeholder="010-1234-5678"></td>
+                        </tr>
+                        <tr>
+                            <th><label>주소 <p class="red_star">*</p></label></th>
+                            <td><input type="text" id="userName"></td>
+                            <th><label>이메일 주소 <p class="red_star">*</p></label></th>
+                            <td><input type="email" id="userName"></td>
+                        </tr>
+                        <tr>
+                            <th>프로그램 신청 동기</th>
+                            <td colspan="3"><input type="text" id="userName"style="height: 100px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btns">
+                    <button id="btn_cancel" class="checkText">취소</button>
+                    <button id="btn_apply" class="checkText">등록</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="bottom_link">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo_white.png" style="vertical-align: middle; width: 130%;"
+                        alt="똑똑! 청년농부">
+                </div>
+                <ul class="list_link">
+                    <!--<li>
+                <a href="https://www.rda.go.kr/board/board.do?mode=list&prgId=rep_hompicvnEntry" target="_blank">홈페이지 불편신고</a>
+            </li>-->
+                    <li>
+                        <a href="admin.jsp" target="_blank">관리자 페이지</a>
+                    </li>
+                    <li>
+                        <a href="https://www.rda.go.kr/psninfoprot.do" target="_blank">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="address">
+            <div class="container">
+                <ul>
+                    <li>코리아IT아카데미 강남점</li>
+                    <li>서울특별시 강남구 테헤란로 146 현역빌딩 3,4층</li>
+                    <li>대표전화 02-538-0021</li>
+                </ul>
+                <p class="copy">COPYRIGHT &copy;. ALL RIGHTS RESERVED</p>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script>
+    var GNB;
+    //전체 메뉴 HOVER , FOCUS
+    $(function () {
+        GNB = $('#gnb');
+        GNB.find('>ul>li>a').on('mouseenter', function (e) {
+            e.preventDefault();
+            GNB.find('>ul>li>ul[data-level="2"]:visible').parent('li').removeClass('on');
+            $(this).next('ul[data-level="2"]:hidden').parent('li').addClass('on');
+        }).focus(function () {
+            $(this).mouseover();
+        }).end().mouseleave(function () {
+            GNB.find('>ul>li>ul[data-level="2"]').prev('a').parent().siblings().removeClass('on');
+        }).find('li').last().focusout(function () {
+            $(this).mouseleave();
+        });
+    });
+
+    // 상단 메뉴 있었다가 없어지기
+    $(document).ready(function () {
+        $('#gnb_wrap').mouseover(function () {
+            $('.lgr_back').css('display', 'block');
+        });
+
+        $('.lgr_back').mouseleave(function () {
+            $('.lgr_back').css('display', 'none');
+        })
+    })
+
+    // 자녀 항목들 mouseover시 부모 타이틀 색 변경
+
+    $('.j1').mouseover(function () {
+        $('.j1').siblings('#k1').childred('a').css("color", "#7fb069");
+    });
+
+    $('.j1').mouseleave(function () {
+        $('.j1').siblings('#k1').childred('a').css("color", "#333333");
+    });
+
+    $('.j2').mouseover(function () {
+        $('#k2').css('color', '#7fb069');
+    });
+
+    $('.j2').mouseleave(function () {
+        $('#k2').css('color', '#333333');
+    });
+
+    $('.j3').mouseover(function () {
+        $('#k3').css('color', '#7fb069');
+    });
+
+    $('.j3').mouseleave(function () {
+        $('#k3').css('color', '#333333');
+    });
+
+    $('.j4').mouseover(function () {
+        $('#k4').css('color', '#7fb069');
+    });
+
+    $('.j4').mouseleave(function () {
+        $('#k4').css('color', '#333333');
+    });
+
+    $('.j5').mouseover(function () {
+        $('#k5').css('color', '#7fb069');
+    });
+
+    $('.j5').mouseleave(function () {
+        $('#k5').css('color', '#333333');
+    });
+
+</script>
+</html>

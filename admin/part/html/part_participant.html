@@ -70,6 +70,11 @@
                     </ul>
                  </li>
   
+                 <li class='active sub-menu'><a href='#'><span>댓글</span><span class="toggleBtn2">+</span></a>
+                    <ul>
+                       <li><a href='../../reply/html/reply.html'><span>댓글 관리</span></a></li>
+                    </ul>
+                 </li>
               </ul>
            </div>
         </nav>
@@ -110,7 +115,7 @@
                         <span class="s-form">
                             <select name="searchSelect" class="val">
                                 <option value="programName">아르바이트명</option>
-                                <option value="id">지원자</option>
+                                <option value="id">아이디</option>
                                 <option value="address">위치</option>
                             </select>
                         </span>
@@ -137,13 +142,13 @@
                 <table>
                     <tr class="title">
                         <th class="num">번호</th>
-                        <th class="id">지원자 ID</th>
+                        <th class="id">아이디</th>
                         <th class="title">프로그램명</th>
                         <th class="work-date">작업날짜</th>
                         <th class="work-time">작업시간</th>
                         <th class="crop">작물</th>
                         <th class="address">위치</th>
-                        <th class="date">지원 날짜</th>
+                        <th class="date">신청날짜</th>
                         <th class="delete"></th>
                     </tr>
                     <!-- ↓ 데이터 출력 -->
@@ -155,7 +160,7 @@
                         <td>5h</td>
                         <td>잡초</td>
                         <td>서울</td>
-                        <td>2022-10-01</td>
+                        <td>2022-10-03 10:00</td>
                         <td class="delete"><input type="button" value="거절" onclick="noCheck2()"></td>
                     </tr>
                 </table>

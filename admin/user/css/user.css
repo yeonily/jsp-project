@@ -14,14 +14,14 @@ div#lineChart {
 }
 
 th.num { width: 6%; }
-th.id { width: 13%; }
+th.id { width: 12%; }
 th.email { width: 13%; }
 th.phone { width: 10%; }
 th.name { width: 7%; }
 th.birth { width: 10%; }
-th.address { width: 23%; }
-th.program-count { width: 6%; }
-th.part-count { width: 6%; }
+th.address { width: 26%; }
+th.program-count { width: 5%; }
+th.part-count { width: 5%; }
 th.delete { width: 6%; }
 
 td.delete { padding: 0 0.3vw; }
