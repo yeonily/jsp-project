@@ -464,3 +464,18 @@ input.inputCertiNum::placeholder {
     padding: 10px;
     font-size: 14px;
 }
+
+
+
+div.test1, div.test2 {
+    display: block;
+    margin-top: 1px;
+}
+input.inputPhone,
+input.inputCertiNum {
+    padding-left: 10px;
+}
+input.inputPhone::placeholder,
+input.inputCertiNum::placeholder {
+    padding: 0;
+}
