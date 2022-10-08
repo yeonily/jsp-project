@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sub_title.css"> <!-- 상단 마이페이지 title -->
-    <link rel="stylesheet" href="myProfile.css"> <!-- 내 정보 간단하게 보여주는 폼 -->
     <link rel="stylesheet" href="updateInfo.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
@@ -262,14 +260,18 @@
                                     <!-- 일반 회원으로 가입했을 시 일반회원 -->
                                     <th>휴대폰 번호</th>
                                     <td>
-                                        <span class="printPhone">010-0000-0000</span>
-                                        <input type="button" value="다른번호 인증" class="changePhone">
-                                         <!-- (이후) 사용자가 다른번호 인증 버튼을 눌렀을 때 인증번호 발송 버튼으로 변경 -->
-                                        <input type="text" class="inputPhone" placeholder="휴대폰 번호를 입력해주세요" hidden>
-                                        <input type="button" value="인증번호 발송" class="sendNumber" hidden>
-                                        <!-- (이후) 사용자가 휴대폰 번호까지 기입을 하고 인증번호 발송을 눌렀을 때 인증번호를 입력할 수 있는 input 만들기 -->
-                                        <input type="text" class="inputCertiNum" placeholder="인증번호를 입력해주세요" hidden>
-                                        <input type="button" value="확인" class="submitBtn" hidden>
+                                        <div class="test1">
+                                            <span class="printPhone">010-0000-0000</span>
+                                            <input type="button" value="다른번호 인증" class="changePhone">
+                                            <!-- (이후) 사용자가 다른번호 인증 버튼을 눌렀을 때 인증번호 발송 버튼으로 변경 -->
+                                            <input type="text" class="inputPhone" placeholder="휴대폰 번호를 입력해주세요" hidden>
+                                            <input type="button" value="인증번호 발송" class="sendNumber" hidden>
+                                        </div>
+                                        <div class="test2">
+                                            <!-- (이후) 사용자가 휴대폰 번호까지 기입을 하고 인증번호 발송을 눌렀을 때 인증번호를 입력할 수 있는 input 만들기 -->
+                                            <input type="text" class="inputCertiNum" placeholder="인증번호를 입력해주세요" hidden>
+                                            <input type="button" value="확인" class="submitBtn" hidden>
+                                        </div>
                                     </td> <!-- 이후 사용자가 가입시 선택한 사항에 따라 출력 -->
                                 </tr>
                                 <tr>
@@ -463,13 +465,16 @@
 
     /* 변경할 휴대폰 번호 입력 후 "인증번호 발송" 버튼 클릭시 */
     $(".sendNumber").click(function() {
+        let text = $(".inputPhone").val(); // 사용자가 입력한 휴대폰 번호
+        $(".inputPhone").val(text);
+        $(".inputPhone").attr("readonly", true);
         /* 기존 요소 숨김 */
-        $(".inputPhone").css("display", "none");
         $(".sendNumber").css("display", "none");
-
         $(".inputCertiNum").css("display", "inline-block");
         $(".submitBtn").css("display", "inline-block");
     });
+
+
 
 
     /* -------------------------------------------------------------- */
